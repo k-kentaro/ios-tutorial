@@ -13,6 +13,10 @@
 		14B5555D2809A54D003F8E17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B5555B2809A54D003F8E17 /* Main.storyboard */; };
 		14B5555F2809A555003F8E17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14B5555E2809A555003F8E17 /* Assets.xcassets */; };
 		14B555622809A555003F8E17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B555602809A555003F8E17 /* LaunchScreen.storyboard */; };
+		B453F86A281F86CA00629216 /* YouTube.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B453F869281F86CA00629216 /* YouTube.storyboard */; };
+		B453F86C281F879200629216 /* YouTubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B453F86B281F879200629216 /* YouTubeViewController.swift */; };
+		B4C255C02824C0800055E69B /* STYLEHAUS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C255BF2824C0800055E69B /* STYLEHAUS.swift */; };
+		B4C255C22824C0C40055E69B /* STYLEHAUS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C255C12824C0C40055E69B /* STYLEHAUS.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		14B5555E2809A555003F8E17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14B555612809A555003F8E17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14B555632809A555003F8E17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B453F869281F86CA00629216 /* YouTube.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YouTube.storyboard; sourceTree = "<group>"; };
+		B453F86B281F879200629216 /* YouTubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeViewController.swift; sourceTree = "<group>"; };
+		B4C255BF2824C0800055E69B /* STYLEHAUS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STYLEHAUS.swift; sourceTree = "<group>"; };
+		B4C255C12824C0C40055E69B /* STYLEHAUS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = STYLEHAUS.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,49 @@
 			children = (
 				14B555552809A54D003F8E17 /* AppDelegate.swift */,
 				14B555572809A54D003F8E17 /* SceneDelegate.swift */,
-				14B555592809A54D003F8E17 /* ViewController.swift */,
-				14B5555B2809A54D003F8E17 /* Main.storyboard */,
+				B4C255C32824C0F40055E69B /* Main */,
+				B453F867281F869D00629216 /* Copy */,
 				14B5555E2809A555003F8E17 /* Assets.xcassets */,
 				14B555602809A555003F8E17 /* LaunchScreen.storyboard */,
 				14B555632809A555003F8E17 /* Info.plist */,
 			);
 			path = tutorial;
+			sourceTree = "<group>";
+		};
+		B453F867281F869D00629216 /* Copy */ = {
+			isa = PBXGroup;
+			children = (
+				B4C255BE2824C04A0055E69B /* STYLEHAUS */,
+				B453F868281F86B200629216 /* YouTube */,
+			);
+			path = Copy;
+			sourceTree = "<group>";
+		};
+		B453F868281F86B200629216 /* YouTube */ = {
+			isa = PBXGroup;
+			children = (
+				B453F869281F86CA00629216 /* YouTube.storyboard */,
+				B453F86B281F879200629216 /* YouTubeViewController.swift */,
+			);
+			path = YouTube;
+			sourceTree = "<group>";
+		};
+		B4C255BE2824C04A0055E69B /* STYLEHAUS */ = {
+			isa = PBXGroup;
+			children = (
+				B4C255BF2824C0800055E69B /* STYLEHAUS.swift */,
+				B4C255C12824C0C40055E69B /* STYLEHAUS.storyboard */,
+			);
+			path = STYLEHAUS;
+			sourceTree = "<group>";
+		};
+		B4C255C32824C0F40055E69B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				14B555592809A54D003F8E17 /* ViewController.swift */,
+				14B5555B2809A54D003F8E17 /* Main.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +171,9 @@
 			files = (
 				14B555622809A555003F8E17 /* LaunchScreen.storyboard in Resources */,
 				14B5555F2809A555003F8E17 /* Assets.xcassets in Resources */,
+				B453F86A281F86CA00629216 /* YouTube.storyboard in Resources */,
 				14B5555D2809A54D003F8E17 /* Main.storyboard in Resources */,
+				B4C255C22824C0C40055E69B /* STYLEHAUS.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +184,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4C255C02824C0800055E69B /* STYLEHAUS.swift in Sources */,
 				14B5555A2809A54D003F8E17 /* ViewController.swift in Sources */,
+				B453F86C281F879200629216 /* YouTubeViewController.swift in Sources */,
 				14B555562809A54D003F8E17 /* AppDelegate.swift in Sources */,
 				14B555582809A54D003F8E17 /* SceneDelegate.swift in Sources */,
 			);
@@ -216,7 +264,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +318,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
