@@ -17,6 +17,8 @@
 		B453F86C281F879200629216 /* YouTubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B453F86B281F879200629216 /* YouTubeViewController.swift */; };
 		B4C255C02824C0800055E69B /* STYLEHAUS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C255BF2824C0800055E69B /* STYLEHAUS.swift */; };
 		B4C255C22824C0C40055E69B /* STYLEHAUS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C255C12824C0C40055E69B /* STYLEHAUS.storyboard */; };
+		B4C255C62824F9F40055E69B /* standFMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C255C52824F9F40055E69B /* standFMViewController.swift */; };
+		B4C255C82824FA090055E69B /* standFM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C255C72824FA090055E69B /* standFM.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		B453F86B281F879200629216 /* YouTubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeViewController.swift; sourceTree = "<group>"; };
 		B4C255BF2824C0800055E69B /* STYLEHAUS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STYLEHAUS.swift; sourceTree = "<group>"; };
 		B4C255C12824C0C40055E69B /* STYLEHAUS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = STYLEHAUS.storyboard; sourceTree = "<group>"; };
+		B4C255C52824F9F40055E69B /* standFMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = standFMViewController.swift; sourceTree = "<group>"; };
+		B4C255C72824FA090055E69B /* standFM.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = standFM.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 		B453F867281F869D00629216 /* Copy */ = {
 			isa = PBXGroup;
 			children = (
+				B4C255C42824F9420055E69B /* standFM */,
 				B4C255BE2824C04A0055E69B /* STYLEHAUS */,
 				B453F868281F86B200629216 /* YouTube */,
 			);
@@ -109,6 +114,15 @@
 				14B5555B2809A54D003F8E17 /* Main.storyboard */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		B4C255C42824F9420055E69B /* standFM */ = {
+			isa = PBXGroup;
+			children = (
+				B4C255C52824F9F40055E69B /* standFMViewController.swift */,
+				B4C255C72824FA090055E69B /* standFM.storyboard */,
+			);
+			path = standFM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4C255C82824FA090055E69B /* standFM.storyboard in Resources */,
 				14B555622809A555003F8E17 /* LaunchScreen.storyboard in Resources */,
 				14B5555F2809A555003F8E17 /* Assets.xcassets in Resources */,
 				B453F86A281F86CA00629216 /* YouTube.storyboard in Resources */,
@@ -188,6 +203,7 @@
 				14B5555A2809A54D003F8E17 /* ViewController.swift in Sources */,
 				B453F86C281F879200629216 /* YouTubeViewController.swift in Sources */,
 				14B555562809A54D003F8E17 /* AppDelegate.swift in Sources */,
+				B4C255C62824F9F40055E69B /* standFMViewController.swift in Sources */,
 				14B555582809A54D003F8E17 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
