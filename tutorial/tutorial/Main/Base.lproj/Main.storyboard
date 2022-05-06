@@ -23,8 +23,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGT-HN-u6C">
-                                <rect key="frame" x="150" y="411" width="114" height="31"/>
+                                <rect key="frame" x="147" y="396" width="120" height="31"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="PKQ-UT-c0P"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="YouTube"/>
@@ -33,8 +36,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgF-q9-Yuq">
-                                <rect key="frame" x="150" y="520" width="114" height="31"/>
+                                <rect key="frame" x="147" y="497" width="120" height="31"/>
                                 <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="1uc-LI-W5Y"/>
+                                </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="STYLEHAUS"/>
@@ -46,14 +52,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PgF-q9-Yuq" secondAttribute="trailing" constant="150" id="0Wq-VU-nNw"/>
                             <constraint firstItem="VFQ-hF-eMh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5jr-Fy-YCG"/>
-                            <constraint firstItem="PgF-q9-Yuq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="I3T-56-0F2"/>
+                            <constraint firstItem="PgF-q9-Yuq" firstAttribute="top" secondItem="xGT-HN-u6C" secondAttribute="bottom" constant="70" id="Crk-l1-Ri0"/>
+                            <constraint firstItem="PgF-q9-Yuq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F5h-fX-MAA"/>
+                            <constraint firstItem="xGT-HN-u6C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PSl-Pk-OtF"/>
                             <constraint firstItem="VFQ-hF-eMh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="207" id="Tjq-XX-WU4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xGT-HN-u6C" secondAttribute="trailing" constant="150" id="XA3-Yy-v10"/>
-                            <constraint firstItem="xGT-HN-u6C" firstAttribute="top" secondItem="VFQ-hF-eMh" secondAttribute="bottom" constant="95" id="bei-1Q-kjX"/>
-                            <constraint firstItem="xGT-HN-u6C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="goM-Ld-jPn"/>
-                            <constraint firstItem="PgF-q9-Yuq" firstAttribute="top" secondItem="xGT-HN-u6C" secondAttribute="bottom" constant="78" id="tZV-V0-tDo"/>
+                            <constraint firstItem="xGT-HN-u6C" firstAttribute="top" secondItem="VFQ-hF-eMh" secondAttribute="bottom" constant="80" id="bei-1Q-kjX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="deL-k4-Yvb"/>
