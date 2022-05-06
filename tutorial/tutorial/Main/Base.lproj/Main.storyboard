@@ -27,20 +27,33 @@
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="YouTube"/>
                                 <connections>
                                     <segue destination="nmk-qR-RCP" kind="push" id="8Vu-aM-4Qf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgF-q9-Yuq">
+                                <rect key="frame" x="150" y="520" width="114" height="31"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="STYLEHAUS"/>
+                                <connections>
+                                    <segue destination="sIL-db-NGk" kind="show" id="nQu-56-KxE"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PgF-q9-Yuq" secondAttribute="trailing" constant="150" id="0Wq-VU-nNw"/>
                             <constraint firstItem="VFQ-hF-eMh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5jr-Fy-YCG"/>
+                            <constraint firstItem="PgF-q9-Yuq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="I3T-56-0F2"/>
                             <constraint firstItem="VFQ-hF-eMh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="207" id="Tjq-XX-WU4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xGT-HN-u6C" secondAttribute="trailing" constant="150" id="XA3-Yy-v10"/>
                             <constraint firstItem="xGT-HN-u6C" firstAttribute="top" secondItem="VFQ-hF-eMh" secondAttribute="bottom" constant="95" id="bei-1Q-kjX"/>
                             <constraint firstItem="xGT-HN-u6C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="goM-Ld-jPn"/>
+                            <constraint firstItem="PgF-q9-Yuq" firstAttribute="top" secondItem="xGT-HN-u6C" secondAttribute="bottom" constant="78" id="tZV-V0-tDo"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="deL-k4-Yvb"/>
@@ -59,6 +72,16 @@
             </objects>
             <point key="canvasLocation" x="1488.4057971014495" y="55.580357142857139"/>
         </scene>
+        <!--STYLEHAUS-->
+        <scene sceneID="6kr-lY-B3v">
+            <objects>
+                <viewControllerPlaceholder storyboardName="STYLEHAUS" id="sIL-db-NGk" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="rcH-u2-pKk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MCp-tn-32V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1515" y="230"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="P5h-gX-4pU">
             <objects>
@@ -76,6 +99,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MSQ-Cv-xtf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="hiD-IA-iJK">
+            <objects>
+                <viewControllerPlaceholder id="oCB-HC-y08" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k5W-l8-8AP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="457" y="29"/>
         </scene>
     </scenes>
 </document>
