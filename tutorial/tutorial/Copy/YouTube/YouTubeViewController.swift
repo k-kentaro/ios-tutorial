@@ -7,14 +7,12 @@
 
 import UIKit
 
-final class YouTubeViewController:ViewController {
-    
-    
+final class YouTubeViewController:UIViewController {
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.navigationBar.isHidden = true
         
     }
     
