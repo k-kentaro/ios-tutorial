@@ -9,7 +9,7 @@ import UIKit
 
 final class YouTubeViewController: UIViewController {
     
-    private let videoModel = VideoModel.createModel()
+    private let videoModel = YouTubeVideoModel.createModel()
     private let cellname = "VideoTableViewCell"
     private let reuseId = "VideoTableViewCell"
     @IBOutlet private weak var videoTableView: UITableView! {

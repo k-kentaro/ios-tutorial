@@ -15,7 +15,7 @@ final class ListTableViewCell: UITableViewCell {
     @IBOutlet private weak var writerName: UILabel!
     
     
-    func configure(model: ListModel) {
+    func configure(model: STYLEHAUSListModel) {
         articleImage.image = model.articleImage
         articleText.text = model.articleText
         articleCategory.text = model.articleCategory
