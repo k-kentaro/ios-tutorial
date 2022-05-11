@@ -80,25 +80,17 @@
 		14B555542809A54D003F8E17 /* tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				14B555552809A54D003F8E17 /* AppDelegate.swift */,
-				14B555572809A54D003F8E17 /* SceneDelegate.swift */,
-				B4C255C32824C0F40055E69B /* Main */,
-				B453F867281F869D00629216 /* Copy */,
-				14B5555E2809A555003F8E17 /* Assets.xcassets */,
-				14B555602809A555003F8E17 /* LaunchScreen.storyboard */,
-				14B555632809A555003F8E17 /* Info.plist */,
-			);
-			path = tutorial;
-			sourceTree = "<group>";
-		};
-		B453F867281F869D00629216 /* Copy */ = {
-			isa = PBXGroup;
-			children = (
 				B4C255C42824F9420055E69B /* standFM */,
 				B4C255BE2824C04A0055E69B /* STYLEHAUS */,
 				B453F868281F86B200629216 /* YouTube */,
+				14B555632809A555003F8E17 /* Info.plist */,
+				B4C255C32824C0F40055E69B /* Main */,
+				14B555572809A54D003F8E17 /* SceneDelegate.swift */,
+				14B555552809A54D003F8E17 /* AppDelegate.swift */,
+				14B5555E2809A555003F8E17 /* Assets.xcassets */,
+				14B555602809A555003F8E17 /* LaunchScreen.storyboard */,
 			);
-			path = Copy;
+			path = tutorial;
 			sourceTree = "<group>";
 		};
 		B453F868281F86B200629216 /* YouTube */ = {
