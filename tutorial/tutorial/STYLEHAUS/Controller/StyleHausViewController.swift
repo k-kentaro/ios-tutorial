@@ -10,7 +10,7 @@ import UIKit
 final class StyleHausViewController: UIViewController {
     
     private let listTableViewCell = "ListTableViewCell"
-    private let listModel = STYLEHAUSListModel.createModel()
+    private let listModel = StyleHausListModel.createModel()
     
     @IBOutlet private weak var listTableView: UITableView! {
         didSet {
