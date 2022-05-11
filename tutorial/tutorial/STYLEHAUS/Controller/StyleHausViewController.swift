@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class STYLEHAUSViewController: UIViewController {
+final class StyleHausViewController: UIViewController {
     
     private let listTableViewCell = "ListTableViewCell"
     private let listModel = STYLEHAUSListModel.createModel()
@@ -23,11 +23,16 @@ final class STYLEHAUSViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
+        
+        let target = self.navigationController?.value(forKey: "_cachedInteractionController")
+        let recognizer = UIPanGestureRecognizer(target: target, action: Selector(("handleNavigationTransition:")))
+        self.view.addGestureRecognizer(recognizer)
+        
     }
     
 }
 
-extension STYLEHAUSViewController: UITableViewDelegate,UITableViewDataSource {
+extension StyleHausViewController: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         listModel.count
     }
