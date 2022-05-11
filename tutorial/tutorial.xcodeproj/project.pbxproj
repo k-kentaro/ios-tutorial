@@ -23,8 +23,8 @@
 		B48119E628290B6D0030C9B5 /* LiveListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48119E428290B6D0030C9B5 /* LiveListCell.xib */; };
 		B4C255C02824C0800055E69B /* STYLEHAUS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C255BF2824C0800055E69B /* STYLEHAUS.swift */; };
 		B4C255C22824C0C40055E69B /* STYLEHAUS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C255C12824C0C40055E69B /* STYLEHAUS.storyboard */; };
-		B4C255C62824F9F40055E69B /* standFMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C255C52824F9F40055E69B /* standFMViewController.swift */; };
-		B4C255C82824FA090055E69B /* standFM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C255C72824FA090055E69B /* standFM.storyboard */; };
+		B4C255C62824F9F40055E69B /* StandFMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C255C52824F9F40055E69B /* StandFMViewController.swift */; };
+		B4C255C82824FA090055E69B /* StandFM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C255C72824FA090055E69B /* StandFM.storyboard */; };
 		B4C255CB282515100055E69B /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C255C9282515100055E69B /* VideoTableViewCell.swift */; };
 		B4C255CC282515100055E69B /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4C255CA282515100055E69B /* VideoTableViewCell.xib */; };
 		B4C255CE282515470055E69B /* YouTubeVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C255CD282515470055E69B /* YouTubeVideoModel.swift */; };
@@ -49,8 +49,8 @@
 		B48119E428290B6D0030C9B5 /* LiveListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveListCell.xib; sourceTree = "<group>"; };
 		B4C255BF2824C0800055E69B /* STYLEHAUS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STYLEHAUS.swift; sourceTree = "<group>"; };
 		B4C255C12824C0C40055E69B /* STYLEHAUS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = STYLEHAUS.storyboard; sourceTree = "<group>"; };
-		B4C255C52824F9F40055E69B /* standFMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = standFMViewController.swift; sourceTree = "<group>"; };
-		B4C255C72824FA090055E69B /* standFM.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = standFM.storyboard; sourceTree = "<group>"; };
+		B4C255C52824F9F40055E69B /* StandFMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandFMViewController.swift; sourceTree = "<group>"; };
+		B4C255C72824FA090055E69B /* StandFM.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StandFM.storyboard; sourceTree = "<group>"; };
 		B4C255C9282515100055E69B /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		B4C255CA282515100055E69B /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
 		B4C255CD282515470055E69B /* YouTubeVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeVideoModel.swift; sourceTree = "<group>"; };
@@ -158,13 +158,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		B48119E0282909C10030C9B5 /* ViewController */ = {
+		B48119E0282909C10030C9B5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B4C255C72824FA090055E69B /* standFM.storyboard */,
-				B4C255C52824F9F40055E69B /* standFMViewController.swift */,
+				B4C255C72824FA090055E69B /* StandFM.storyboard */,
+				B4C255C52824F9F40055E69B /* StandFMViewController.swift */,
 			);
-			path = ViewController;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		B4C255BE2824C04A0055E69B /* STYLEHAUS */ = {
@@ -191,7 +191,7 @@
 		B4C255C42824F9420055E69B /* standFM */ = {
 			isa = PBXGroup;
 			children = (
-				B48119E0282909C10030C9B5 /* ViewController */,
+				B48119E0282909C10030C9B5 /* Controller */,
 				B48119DF282909B70030C9B5 /* Model */,
 				B48119DE282909AE0030C9B5 /* View */,
 			);
@@ -283,7 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4C255CC282515100055E69B /* VideoTableViewCell.xib in Resources */,
-				B4C255C82824FA090055E69B /* standFM.storyboard in Resources */,
+				B4C255C82824FA090055E69B /* StandFM.storyboard in Resources */,
 				14B555622809A555003F8E17 /* LaunchScreen.storyboard in Resources */,
 				14B5555F2809A555003F8E17 /* Assets.xcassets in Resources */,
 				B48119E628290B6D0030C9B5 /* LiveListCell.xib in Resources */,
@@ -308,7 +308,7 @@
 				B4C255CB282515100055E69B /* VideoTableViewCell.swift in Sources */,
 				B453F86C281F879200629216 /* YouTubeViewController.swift in Sources */,
 				14B555562809A54D003F8E17 /* AppDelegate.swift in Sources */,
-				B4C255C62824F9F40055E69B /* standFMViewController.swift in Sources */,
+				B4C255C62824F9F40055E69B /* StandFMViewController.swift in Sources */,
 				14B555582809A54D003F8E17 /* SceneDelegate.swift in Sources */,
 				B48119E528290B6D0030C9B5 /* LiveListCell.swift in Sources */,
 				B4C255CE282515470055E69B /* YouTubeVideoModel.swift in Sources */,

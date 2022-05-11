@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class standFMViewController: UIViewController {
+final class StandFMViewController: UIViewController {
     
     private let liveListCell = "LiveListCell"
     private let liveListModel = StandFMLiveListModel.createModel()
@@ -23,11 +23,16 @@ final class standFMViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true
+        
+        let target = self.navigationController?.value(forKey: "_cachedInteractionController")
+        let recognizer = UIPanGestureRecognizer(target: target, action: Selector(("handleNavigationTransition:")))
+        self.view.addGestureRecognizer(recognizer)
+        
     }
- 
+    
 }
 
-extension standFMViewController: UITableViewDelegate,UITableViewDataSource {
+extension StandFMViewController: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         liveListModel.count
     }

@@ -101,10 +101,10 @@
             </objects>
             <point key="canvasLocation" x="1515" y="230"/>
         </scene>
-        <!--standFM-->
+        <!--StandFM-->
         <scene sceneID="hjO-Pf-s7W">
             <objects>
-                <viewControllerPlaceholder storyboardName="standFM" id="vrg-AR-Tu3" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="StandFM" id="vrg-AR-Tu3" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="B1w-cq-p0J"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xLc-sX-cEf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
