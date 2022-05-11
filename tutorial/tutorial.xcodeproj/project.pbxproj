@@ -106,6 +106,8 @@
 		B48119D52828B43B0030C9B5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B4C255BF2824C0800055E69B /* StyleHausViewController.swift */,
+				B4C255C12824C0C40055E69B /* StyleHaus.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -133,8 +135,6 @@
 				B48119D72828B4520030C9B5 /* View */,
 				B48119D62828B4490030C9B5 /* Model */,
 				B48119D52828B43B0030C9B5 /* Controller */,
-				B4C255BF2824C0800055E69B /* StyleHausViewController.swift */,
-				B4C255C12824C0C40055E69B /* StyleHaus.storyboard */,
 			);
 			path = STYLEHAUS;
 			sourceTree = "<group>";
