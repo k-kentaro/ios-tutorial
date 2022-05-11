@@ -91,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="1488.4057971014495" y="55.580357142857139"/>
         </scene>
-        <!--STYLEHAUS-->
+        <!--StyleHaus-->
         <scene sceneID="6kr-lY-B3v">
             <objects>
-                <viewControllerPlaceholder storyboardName="STYLEHAUS" id="sIL-db-NGk" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="StyleHaus" id="sIL-db-NGk" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="rcH-u2-pKk"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MCp-tn-32V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
