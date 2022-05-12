@@ -17,8 +17,8 @@
 		B453F86C281F879200629216 /* YouTubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B453F86B281F879200629216 /* YouTubeViewController.swift */; };
 		B48119DC2828B85B0030C9B5 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48119DA2828B85B0030C9B5 /* ListTableViewCell.swift */; };
 		B48119DD2828B85B0030C9B5 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48119DB2828B85B0030C9B5 /* ListTableViewCell.xib */; };
-		B48119F7282B673D0030C9B5 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48119F6282B673D0030C9B5 /* ListModel.swift */; };
-		B48119F9282B68530030C9B5 /* LiveListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48119F8282B68530030C9B5 /* LiveListModel.swift */; };
+		B48119F7282B673D0030C9B5 /* StyleHausListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48119F6282B673D0030C9B5 /* StyleHausListModel.swift */; };
+		B48119F9282B68530030C9B5 /* StandFMLiveListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48119F8282B68530030C9B5 /* StandFMLiveListModel.swift */; };
 		B48119FB282B686E0030C9B5 /* LiveListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48119FA282B686E0030C9B5 /* LiveListCell.swift */; };
 		B48119FD282B68760030C9B5 /* LiveListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48119FC282B68760030C9B5 /* LiveListCell.xib */; };
 		B4C255C02824C0800055E69B /* StyleHausViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C255BF2824C0800055E69B /* StyleHausViewController.swift */; };
@@ -43,8 +43,8 @@
 		B453F86B281F879200629216 /* YouTubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeViewController.swift; sourceTree = "<group>"; };
 		B48119DA2828B85B0030C9B5 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		B48119DB2828B85B0030C9B5 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
-		B48119F6282B673D0030C9B5 /* ListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
-		B48119F8282B68530030C9B5 /* LiveListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveListModel.swift; sourceTree = "<group>"; };
+		B48119F6282B673D0030C9B5 /* StyleHausListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleHausListModel.swift; sourceTree = "<group>"; };
+		B48119F8282B68530030C9B5 /* StandFMLiveListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandFMLiveListModel.swift; sourceTree = "<group>"; };
 		B48119FA282B686E0030C9B5 /* LiveListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveListCell.swift; sourceTree = "<group>"; };
 		B48119FC282B68760030C9B5 /* LiveListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveListCell.xib; sourceTree = "<group>"; };
 		B4C255BF2824C0800055E69B /* StyleHausViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleHausViewController.swift; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 		B48119D62828B4490030C9B5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B48119F6282B673D0030C9B5 /* ListModel.swift */,
+				B48119F6282B673D0030C9B5 /* StyleHausListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,7 +147,7 @@
 		B48119DF282909B70030C9B5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B48119F8282B68530030C9B5 /* LiveListModel.swift */,
+				B48119F8282B68530030C9B5 /* StandFMLiveListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -295,7 +295,7 @@
 			files = (
 				B4C255C02824C0800055E69B /* StyleHausViewController.swift in Sources */,
 				14B5555A2809A54D003F8E17 /* ViewController.swift in Sources */,
-				B48119F9282B68530030C9B5 /* LiveListModel.swift in Sources */,
+				B48119F9282B68530030C9B5 /* StandFMLiveListModel.swift in Sources */,
 				B4C255CB282515100055E69B /* VideoTableViewCell.swift in Sources */,
 				B453F86C281F879200629216 /* YouTubeViewController.swift in Sources */,
 				14B555562809A54D003F8E17 /* AppDelegate.swift in Sources */,
@@ -304,7 +304,7 @@
 				B4C255CE282515470055E69B /* YouTubeVideoModel.swift in Sources */,
 				B48119FB282B686E0030C9B5 /* LiveListCell.swift in Sources */,
 				B48119DC2828B85B0030C9B5 /* ListTableViewCell.swift in Sources */,
-				B48119F7282B673D0030C9B5 /* ListModel.swift in Sources */,
+				B48119F7282B673D0030C9B5 /* StyleHausListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
