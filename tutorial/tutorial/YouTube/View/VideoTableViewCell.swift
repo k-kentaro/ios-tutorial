@@ -15,7 +15,8 @@ final class VideoTableViewCell: UITableViewCell {
     @IBOutlet private weak var artistInfo: UILabel!
 
 
-    func configure(model: VideoModel){
+
+    func configure(model: YouTubeVideoModel){
         thumbnail.image = model.thumbnail
         icon.image = model.icon
         title.text = model.title

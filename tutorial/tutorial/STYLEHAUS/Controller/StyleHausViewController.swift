@@ -1,5 +1,5 @@
 //
-//  STYLEHAUS.swift
+//  StyleHausViewController.swift
 //  tutorial
 //
 //  Created by 木元健太郎 on 2022/05/06.
@@ -10,7 +10,7 @@ import UIKit
 final class StyleHausViewController: UIViewController {
     
     private let listTableViewCell = "ListTableViewCell"
-    private let listModel = ListModel.createModel()
+    private let listModel = StyleHausListModel.createModel()
     
     @IBOutlet private weak var listTableView: UITableView! {
         didSet {
