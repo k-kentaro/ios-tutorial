@@ -10,20 +10,20 @@ import Foundation
 
 enum ValidationResult {
     case valid
-    case nameIsEmpty(section: String)
-    case ageIsEmpty(section: String)
-    case birthdayIsEmpty(section: String)
+    case emptyName(section: String)
+    case emptyAge(section: String)
+    case emptyBirthday(section: String)
     
     
     var isValid: Bool {
         switch self {
         case .valid:
             return true
-        case .nameIsEmpty:
+        case .emptyName:
             return false
-        case .ageIsEmpty:
+        case .emptyAge:
             return false
-        case .birthdayIsEmpty:
+        case .emptyBirthday:
             return false
         }
     }
@@ -32,11 +32,11 @@ enum ValidationResult {
         switch self {
         case .valid:
             return ""
-        case .nameIsEmpty(let section):
+        case .emptyName(let section):
             return "\(section)の入力がありません"
-        case .ageIsEmpty(let section):
+        case .emptyAge(let section):
             return "\(section)の入力がありません"
-        case .birthdayIsEmpty(let section):
+        case .emptyBirthday(let section):
             return "\(section)の入力がありません"
         }
     }
@@ -47,18 +47,18 @@ final class Validator {
     static let shared: Validator = .init()
     private init() {}
     
-    func validationCheck(name: String?, age: Int?, birthday: String?) -> ValidationResult {
+    func validateUserInfo(name: String?, age: Int?, birthday: String?) -> ValidationResult {
         
         guard let name = name, !name.isEmpty else {
-            return .nameIsEmpty(section: "名前")
+            return .emptyName(section: "名前")
         }
         
         guard let age = age else {
-            return .ageIsEmpty(section: "年齢(数字）")
+            return .emptyAge(section: "年齢(数字）")
         }
         
         guard let birthday = birthday, !birthday.isEmpty else {
-            return .birthdayIsEmpty(section: "誕生日")
+            return .emptyBirthday(section: "誕生日")
         }
         
         return .valid

@@ -22,6 +22,7 @@ DerivedData/
 *.ipa
 *.dSYM.zip
 *.dSYM
+*.generated.swift
 
 timeline.xctimeline
 playground.xcworkspace
