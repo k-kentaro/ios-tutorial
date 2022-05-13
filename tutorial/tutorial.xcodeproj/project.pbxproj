@@ -100,6 +100,7 @@
 				B4C255BE2824C04A0055E69B /* STYLEHAUS */,
 				B453F868281F86B200629216 /* YouTube */,
 				B4811A42282CB0A00030C9B5 /* UserDefaults */,
+				B404FBCE282DFAEB0049BDD1 /* QiitaClient */,
 				14B555632809A555003F8E17 /* Info.plist */,
 				B4C255C32824C0F40055E69B /* Main */,
 				14B555572809A54D003F8E17 /* SceneDelegate.swift */,
@@ -108,6 +109,22 @@
 				14B555602809A555003F8E17 /* LaunchScreen.storyboard */,
 			);
 			path = tutorial;
+			sourceTree = "<group>";
+		};
+		B404FBCE282DFAEB0049BDD1 /* QiitaClient */ = {
+			isa = PBXGroup;
+			children = (
+				B404FBCF282DFAEB0049BDD1 /* Extension */,
+			);
+			name = QiitaClient;
+			path = tutorial/QiitaClient;
+			sourceTree = SOURCE_ROOT;
+		};
+		B404FBCF282DFAEB0049BDD1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		B453F868281F86B200629216 /* YouTube */ = {
