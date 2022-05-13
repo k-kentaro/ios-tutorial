@@ -13,22 +13,8 @@
 		14B5555D2809A54D003F8E17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B5555B2809A54D003F8E17 /* Main.storyboard */; };
 		14B5555F2809A555003F8E17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14B5555E2809A555003F8E17 /* Assets.xcassets */; };
 		14B555622809A555003F8E17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B555602809A555003F8E17 /* LaunchScreen.storyboard */; };
-		82E7C0EAD9B95E3ACEBD0F9F /* Pods_tutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D904DFD8706C3B2F0802C40 /* Pods_tutorial.framework */; };
 		B453F86A281F86CA00629216 /* YouTube.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B453F869281F86CA00629216 /* YouTube.storyboard */; };
 		B453F86C281F879200629216 /* YouTubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B453F86B281F879200629216 /* YouTubeViewController.swift */; };
-		B45AD41A282CE2EC0032CA9E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45AD419282CE2EC0032CA9E /* R.generated.swift */; };
-		B45AD41D282CE3540032CA9E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B45AD41C282CE3540032CA9E /* Kingfisher */; };
-		B45AD420282CE3A70032CA9E /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = B45AD41F282CE3A70032CA9E /* CombineMoya */; };
-		B45AD422282CE3A70032CA9E /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = B45AD421282CE3A70032CA9E /* Moya */; };
-		B45AD424282CE3A70032CA9E /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = B45AD423282CE3A70032CA9E /* ReactiveMoya */; };
-		B45AD426282CE3A70032CA9E /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = B45AD425282CE3A70032CA9E /* RxMoya */; };
-		B45AD42D282CE71D0032CA9E /* QiitaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45AD42C282CE71C0032CA9E /* QiitaModel.swift */; };
-		B45AD42F282CE8880032CA9E /* QiitaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45AD42E282CE8880032CA9E /* QiitaAPI.swift */; };
-		B45AD432282CED8D0032CA9E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45AD430282CED8C0032CA9E /* TableViewCell.swift */; };
-		B45AD433282CED8D0032CA9E /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45AD431282CED8D0032CA9E /* TableViewCell.xib */; };
-		B45AD438282CF9F70032CA9E /* QiitaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45AD437282CF9F70032CA9E /* QiitaViewModel.swift */; };
-		B45AD450282D03F10032CA9E /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B45AD44F282D03F10032CA9E /* RxCocoa */; };
-		B45AD452282D03F10032CA9E /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B45AD451282D03F10032CA9E /* RxSwift */; };
 		B48119DC2828B85B0030C9B5 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48119DA2828B85B0030C9B5 /* ListTableViewCell.swift */; };
 		B48119DD2828B85B0030C9B5 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48119DB2828B85B0030C9B5 /* ListTableViewCell.xib */; };
 		B48119F7282B673D0030C9B5 /* StyleHausListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48119F6282B673D0030C9B5 /* StyleHausListModel.swift */; };
@@ -40,8 +26,6 @@
 		B4811A4E282CB0A00030C9B5 /* UserDefaults.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4811A47282CB0A00030C9B5 /* UserDefaults.storyboard */; };
 		B4811A4F282CB0A00030C9B5 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4811A49282CB0A00030C9B5 /* DataModel.swift */; };
 		B4811A50282CB0A00030C9B5 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4811A4B282CB0A00030C9B5 /* Validation.swift */; };
-		B4811A57282CD4F10030C9B5 /* QiitaClient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4811A56282CD4F10030C9B5 /* QiitaClient.storyboard */; };
-		B4811A59282CD5210030C9B5 /* QiitaClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4811A58282CD5210030C9B5 /* QiitaClientViewController.swift */; };
 		B4C255C02824C0800055E69B /* StyleHausViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C255BF2824C0800055E69B /* StyleHausViewController.swift */; };
 		B4C255C22824C0C40055E69B /* StyleHaus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C255C12824C0C40055E69B /* StyleHaus.storyboard */; };
 		B4C255C62824F9F40055E69B /* StandFMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C255C52824F9F40055E69B /* StandFMViewController.swift */; };
@@ -60,17 +44,8 @@
 		14B5555E2809A555003F8E17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14B555612809A555003F8E17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14B555632809A555003F8E17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D904DFD8706C3B2F0802C40 /* Pods_tutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2330ECC174CA3DF6D7E2E86E /* Pods-tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tutorial.debug.xcconfig"; path = "Target Support Files/Pods-tutorial/Pods-tutorial.debug.xcconfig"; sourceTree = "<group>"; };
-		9F6DE09E36C5A8A68BBDA584 /* Pods-tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tutorial.release.xcconfig"; path = "Target Support Files/Pods-tutorial/Pods-tutorial.release.xcconfig"; sourceTree = "<group>"; };
 		B453F869281F86CA00629216 /* YouTube.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YouTube.storyboard; sourceTree = "<group>"; };
 		B453F86B281F879200629216 /* YouTubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeViewController.swift; sourceTree = "<group>"; };
-		B45AD419282CE2EC0032CA9E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
-		B45AD42C282CE71C0032CA9E /* QiitaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaModel.swift; sourceTree = "<group>"; };
-		B45AD42E282CE8880032CA9E /* QiitaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAPI.swift; sourceTree = "<group>"; };
-		B45AD430282CED8C0032CA9E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		B45AD431282CED8D0032CA9E /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		B45AD437282CF9F70032CA9E /* QiitaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaViewModel.swift; sourceTree = "<group>"; };
 		B48119DA2828B85B0030C9B5 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		B48119DB2828B85B0030C9B5 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 		B48119F6282B673D0030C9B5 /* StyleHausListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleHausListModel.swift; sourceTree = "<group>"; };
@@ -82,8 +57,6 @@
 		B4811A47282CB0A00030C9B5 /* UserDefaults.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserDefaults.storyboard; sourceTree = "<group>"; };
 		B4811A49282CB0A00030C9B5 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		B4811A4B282CB0A00030C9B5 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
-		B4811A56282CD4F10030C9B5 /* QiitaClient.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QiitaClient.storyboard; sourceTree = "<group>"; };
-		B4811A58282CD5210030C9B5 /* QiitaClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaClientViewController.swift; sourceTree = "<group>"; };
 		B4C255BF2824C0800055E69B /* StyleHausViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleHausViewController.swift; sourceTree = "<group>"; };
 		B4C255C12824C0C40055E69B /* StyleHaus.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StyleHaus.storyboard; sourceTree = "<group>"; };
 		B4C255C52824F9F40055E69B /* StandFMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandFMViewController.swift; sourceTree = "<group>"; };
@@ -98,14 +71,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B45AD426282CE3A70032CA9E /* RxMoya in Frameworks */,
-				B45AD41D282CE3540032CA9E /* Kingfisher in Frameworks */,
-				82E7C0EAD9B95E3ACEBD0F9F /* Pods_tutorial.framework in Frameworks */,
-				B45AD450282D03F10032CA9E /* RxCocoa in Frameworks */,
-				B45AD422282CE3A70032CA9E /* Moya in Frameworks */,
-				B45AD424282CE3A70032CA9E /* ReactiveMoya in Frameworks */,
-				B45AD452282D03F10032CA9E /* RxSwift in Frameworks */,
-				B45AD420282CE3A70032CA9E /* CombineMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,8 +82,6 @@
 			children = (
 				14B555542809A54D003F8E17 /* tutorial */,
 				14B555532809A54D003F8E17 /* Products */,
-				6C532231A2CEFC9E89E0F860 /* Pods */,
-				91550F059995C912F7AFDEA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,7 +96,6 @@
 		14B555542809A54D003F8E17 /* tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				B4811A51282CD4490030C9B5 /* QiitaClient */,
 				B4C255C42824F9420055E69B /* standFM */,
 				B4C255BE2824C04A0055E69B /* STYLEHAUS */,
 				B453F868281F86B200629216 /* YouTube */,
@@ -148,23 +110,6 @@
 			path = tutorial;
 			sourceTree = "<group>";
 		};
-		6C532231A2CEFC9E89E0F860 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2330ECC174CA3DF6D7E2E86E /* Pods-tutorial.debug.xcconfig */,
-				9F6DE09E36C5A8A68BBDA584 /* Pods-tutorial.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		91550F059995C912F7AFDEA4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1D904DFD8706C3B2F0802C40 /* Pods_tutorial.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		B453F868281F86B200629216 /* YouTube */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,21 +118,6 @@
 				B4C255CF28251A110055E69B /* Model */,
 			);
 			path = YouTube;
-			sourceTree = "<group>";
-		};
-		B45AD418282CE2EC0032CA9E /* generated */ = {
-			isa = PBXGroup;
-			children = (
-				B45AD419282CE2EC0032CA9E /* R.generated.swift */,
-			);
-			path = generated;
-			sourceTree = SOURCE_ROOT;
-		};
-		B45AD434282CF0680032CA9E /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		B48119D52828B43B0030C9B5 /* Controller */ = {
@@ -286,54 +216,6 @@
 			path = Validation;
 			sourceTree = "<group>";
 		};
-		B4811A51282CD4490030C9B5 /* QiitaClient */ = {
-			isa = PBXGroup;
-			children = (
-				B45AD434282CF0680032CA9E /* Extension */,
-				B45AD418282CE2EC0032CA9E /* generated */,
-				B4811A55282CD4AF0030C9B5 /* Utility */,
-				B4811A54282CD49E0030C9B5 /* ViewModel */,
-				B4811A53282CD4920030C9B5 /* View */,
-				B4811A52282CD47F0030C9B5 /* Model */,
-			);
-			path = QiitaClient;
-			sourceTree = "<group>";
-		};
-		B4811A52282CD47F0030C9B5 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				B45AD42C282CE71C0032CA9E /* QiitaModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		B4811A53282CD4920030C9B5 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B4811A56282CD4F10030C9B5 /* QiitaClient.storyboard */,
-				B4811A58282CD5210030C9B5 /* QiitaClientViewController.swift */,
-				B45AD430282CED8C0032CA9E /* TableViewCell.swift */,
-				B45AD431282CED8D0032CA9E /* TableViewCell.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B4811A54282CD49E0030C9B5 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				B45AD437282CF9F70032CA9E /* QiitaViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		B4811A55282CD4AF0030C9B5 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				B45AD42E282CE8880032CA9E /* QiitaAPI.swift */,
-			);
-			path = Utility;
-			sourceTree = "<group>";
-		};
 		B4C255BE2824C04A0055E69B /* STYLEHAUS */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,27 +278,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14B555662809A555003F8E17 /* Build configuration list for PBXNativeTarget "tutorial" */;
 			buildPhases = (
-				A9857705ED015E828ED36951 /* [CP] Check Pods Manifest.lock */,
-				B45AD410282CD9500032CA9E /* Run Script */,
 				14B5554E2809A54D003F8E17 /* Sources */,
 				14B5554F2809A54D003F8E17 /* Frameworks */,
 				14B555502809A54D003F8E17 /* Resources */,
-				523AA7A121D41FA08FB86FF8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = tutorial;
-			packageProductDependencies = (
-				B45AD41C282CE3540032CA9E /* Kingfisher */,
-				B45AD41F282CE3A70032CA9E /* CombineMoya */,
-				B45AD421282CE3A70032CA9E /* Moya */,
-				B45AD423282CE3A70032CA9E /* ReactiveMoya */,
-				B45AD425282CE3A70032CA9E /* RxMoya */,
-				B45AD44F282D03F10032CA9E /* RxCocoa */,
-				B45AD451282D03F10032CA9E /* RxSwift */,
-			);
 			productName = tutorial;
 			productReference = 14B555522809A54D003F8E17 /* tutorial.app */;
 			productType = "com.apple.product-type.application";
@@ -445,11 +315,6 @@
 				Base,
 			);
 			mainGroup = 14B555492809A54D003F8E17;
-			packageReferences = (
-				B45AD41B282CE3540032CA9E /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				B45AD41E282CE3A70032CA9E /* XCRemoteSwiftPackageReference "Moya" */,
-				B45AD44E282D03F10032CA9E /* XCRemoteSwiftPackageReference "RxSwift" */,
-			);
 			productRefGroup = 14B555532809A54D003F8E17 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -465,9 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4C255CC282515100055E69B /* VideoTableViewCell.xib in Resources */,
-				B45AD433282CED8D0032CA9E /* TableViewCell.xib in Resources */,
 				B4C255C82824FA090055E69B /* StandFM.storyboard in Resources */,
-				B4811A57282CD4F10030C9B5 /* QiitaClient.storyboard in Resources */,
 				14B555622809A555003F8E17 /* LaunchScreen.storyboard in Resources */,
 				14B5555F2809A555003F8E17 /* Assets.xcassets in Resources */,
 				B48119FD282B68760030C9B5 /* LiveListCell.xib in Resources */,
@@ -481,68 +344,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		523AA7A121D41FA08FB86FF8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-tutorial/Pods-tutorial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-tutorial/Pods-tutorial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tutorial/Pods-tutorial-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A9857705ED015E828ED36951 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-tutorial-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B45AD410282CD9500032CA9E /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$TEMP_DIR/rswift-lastrun",
-			);
-			name = "Run Script";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				$SRCROOT/generated/R.generated.swift,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which rswift >/dev/null; then\nrswift generate \"$SRCROOT/generated/R.generated.swift\"\nelse\necho \"warning: rswift not installed\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		14B5554E2809A54D003F8E17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -550,7 +351,6 @@
 			files = (
 				B4C255C02824C0800055E69B /* StyleHausViewController.swift in Sources */,
 				14B5555A2809A54D003F8E17 /* ViewController.swift in Sources */,
-				B45AD42D282CE71D0032CA9E /* QiitaModel.swift in Sources */,
 				B4811A4C282CB0A00030C9B5 /* UserDefaults+.swift in Sources */,
 				B48119F9282B68530030C9B5 /* StandFMLiveListModel.swift in Sources */,
 				B4C255CB282515100055E69B /* VideoTableViewCell.swift in Sources */,
@@ -559,13 +359,8 @@
 				B453F86C281F879200629216 /* YouTubeViewController.swift in Sources */,
 				14B555562809A54D003F8E17 /* AppDelegate.swift in Sources */,
 				B4C255C62824F9F40055E69B /* StandFMViewController.swift in Sources */,
-				B4811A59282CD5210030C9B5 /* QiitaClientViewController.swift in Sources */,
-				B45AD432282CED8D0032CA9E /* TableViewCell.swift in Sources */,
-				B45AD41A282CE2EC0032CA9E /* R.generated.swift in Sources */,
 				B4811A4D282CB0A00030C9B5 /* UserDefaultsViewController.swift in Sources */,
-				B45AD438282CF9F70032CA9E /* QiitaViewModel.swift in Sources */,
 				14B555582809A54D003F8E17 /* SceneDelegate.swift in Sources */,
-				B45AD42F282CE8880032CA9E /* QiitaAPI.swift in Sources */,
 				B4C255CE282515470055E69B /* YouTubeVideoModel.swift in Sources */,
 				B48119FB282B686E0030C9B5 /* LiveListCell.swift in Sources */,
 				B48119DC2828B85B0030C9B5 /* ListTableViewCell.swift in Sources */,
@@ -711,7 +506,6 @@
 		};
 		14B555672809A555003F8E17 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2330ECC174CA3DF6D7E2E86E /* Pods-tutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -740,7 +534,6 @@
 		};
 		14B555682809A555003F8E17 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F6DE09E36C5A8A68BBDA584 /* Pods-tutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -789,71 +582,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		B45AD41B282CE3540032CA9E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.0.0;
-			};
-		};
-		B45AD41E282CE3A70032CA9E /* XCRemoteSwiftPackageReference "Moya" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Moya/Moya";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		B45AD44E282D03F10032CA9E /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		B45AD41C282CE3540032CA9E /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B45AD41B282CE3540032CA9E /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-		B45AD41F282CE3A70032CA9E /* CombineMoya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B45AD41E282CE3A70032CA9E /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = CombineMoya;
-		};
-		B45AD421282CE3A70032CA9E /* Moya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B45AD41E282CE3A70032CA9E /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = Moya;
-		};
-		B45AD423282CE3A70032CA9E /* ReactiveMoya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B45AD41E282CE3A70032CA9E /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = ReactiveMoya;
-		};
-		B45AD425282CE3A70032CA9E /* RxMoya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B45AD41E282CE3A70032CA9E /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = RxMoya;
-		};
-		B45AD44F282D03F10032CA9E /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B45AD44E282D03F10032CA9E /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		B45AD451282D03F10032CA9E /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B45AD44E282D03F10032CA9E /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 14B5554A2809A54D003F8E17 /* Project object */;
 }
