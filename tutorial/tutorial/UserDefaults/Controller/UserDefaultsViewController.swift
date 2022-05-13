@@ -86,7 +86,7 @@ final class UserDefaultsViewController: UIViewController {
                 let alert = UIAlertController(title: "保存できません",
                                               message: result.errorMessage,
                                               preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                 self?.present(alert, animated: true, completion: nil)
             }
         }))
