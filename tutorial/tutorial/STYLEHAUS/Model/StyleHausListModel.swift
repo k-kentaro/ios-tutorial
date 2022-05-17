@@ -8,13 +8,12 @@
 import UIKit
 
 struct StyleHausListModel {
-    
-    let articleImage:UIImage?
-    let articleText:String
-    let articleCategory:String
-    let writerName:String
-    
-    
+
+    let articleImage: UIImage?
+    let articleText: String
+    let articleCategory: String
+    let writerName: String
+
     static func createModel() -> [StyleHausListModel] {
         return [
             StyleHausListModel(articleImage: UIImage(named: "STYLEHAUSimage1"), articleText: "《メンズにおすすめ》FENDI(フェンディ）のアクセサリーなら気品と華やかさを同時に出せる", articleCategory: "ACCESSORIES", writerName: "AyakoS"),

@@ -5,23 +5,22 @@
 //  Created by 木元健太郎 on 2022/05/12.
 //
 
-import UIKit
 import Kingfisher
+import UIKit
 
 final class TableViewCell: UITableViewCell {
 
-   
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var articleTitle: UILabel!
-    
+
     override func prepareForReuse() {
         super.prepareForReuse()
         profileImage.image = nil
         articleTitle.text = nil
     }
-    
+
     func configure(model: QiitaModel) {
-        guard let image = model.user.profile_image_url else {
+        guard let image = model.user.profileImageUrl else {
             return
         }
         let url = URL(string: image)

@@ -42,6 +42,7 @@
 		B4811A50282CB0A00030C9B5 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4811A4B282CB0A00030C9B5 /* Validation.swift */; };
 		B4811A57282CD4F10030C9B5 /* QiitaClient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4811A56282CD4F10030C9B5 /* QiitaClient.storyboard */; };
 		B4811A59282CD5210030C9B5 /* QiitaClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4811A58282CD5210030C9B5 /* QiitaClientViewController.swift */; };
+		B4892B0B283332CF0099894F /* QiitaSearchTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4892B0A283332CF0099894F /* QiitaSearchTag.swift */; };
 		B4C255C02824C0800055E69B /* StyleHausViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C255BF2824C0800055E69B /* StyleHausViewController.swift */; };
 		B4C255C22824C0C40055E69B /* StyleHaus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C255C12824C0C40055E69B /* StyleHaus.storyboard */; };
 		B4C255C62824F9F40055E69B /* StandFMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C255C52824F9F40055E69B /* StandFMViewController.swift */; };
@@ -84,6 +85,8 @@
 		B4811A4B282CB0A00030C9B5 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		B4811A56282CD4F10030C9B5 /* QiitaClient.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QiitaClient.storyboard; sourceTree = "<group>"; };
 		B4811A58282CD5210030C9B5 /* QiitaClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaClientViewController.swift; sourceTree = "<group>"; };
+		B4892B0A283332CF0099894F /* QiitaSearchTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaSearchTag.swift; sourceTree = "<group>"; };
+		B4892B0E28333AED0099894F /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		B4C255BF2824C0800055E69B /* StyleHausViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleHausViewController.swift; sourceTree = "<group>"; };
 		B4C255C12824C0C40055E69B /* StyleHaus.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StyleHaus.storyboard; sourceTree = "<group>"; };
 		B4C255C52824F9F40055E69B /* StandFMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandFMViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +118,7 @@
 		14B555492809A54D003F8E17 = {
 			isa = PBXGroup;
 			children = (
+				B4892B0E28333AED0099894F /* .swiftlint.yml */,
 				14B555542809A54D003F8E17 /* tutorial */,
 				14B555532809A54D003F8E17 /* Products */,
 				6C532231A2CEFC9E89E0F860 /* Pods */,
@@ -322,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				B45AD42E282CE8880032CA9E /* QiitaAPI.swift */,
+				B4892B0A283332CF0099894F /* QiitaSearchTag.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -394,6 +399,7 @@
 				14B5554F2809A54D003F8E17 /* Frameworks */,
 				14B555502809A54D003F8E17 /* Resources */,
 				523AA7A121D41FA08FB86FF8 /* [CP] Embed Pods Frameworks */,
+				B4892B0C283339E10099894F /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -533,6 +539,24 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which rswift >/dev/null; then\nrswift generate \"$SRCROOT/generated/R.generated.swift\"\nelse\necho \"warning: rswift not installed\"\nfi\n";
 		};
+		B4892B0C283339E10099894F /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint --fix --format\n  swiftlint\nelse\n  echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -561,6 +585,7 @@
 				B4C255CE282515470055E69B /* YouTubeVideoModel.swift in Sources */,
 				B48119FB282B686E0030C9B5 /* LiveListCell.swift in Sources */,
 				B48119DC2828B85B0030C9B5 /* ListTableViewCell.swift in Sources */,
+				B4892B0B283332CF0099894F /* QiitaSearchTag.swift in Sources */,
 				B48119F7282B673D0030C9B5 /* StyleHausListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

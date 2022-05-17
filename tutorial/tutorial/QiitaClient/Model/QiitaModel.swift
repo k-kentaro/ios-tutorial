@@ -9,10 +9,14 @@ import Foundation
 
 struct QiitaModel: Decodable {
     var title: String?
-    var user: User
+    var user: QiitaUser
     let url: String?
 }
 
-struct User: Decodable {
-    var profile_image_url: String?
+struct QiitaUser: Decodable {
+    var profileImageUrl: String?
+
+    enum CodingKeys: String, CodingKey {
+        case profileImageUrl = "profile_image_url"
+    }
 }

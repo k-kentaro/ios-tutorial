@@ -6,17 +6,17 @@
 //
 
 import Foundation
-import RxSwift
+import Moya
 import RxCocoa
 import RxMoya
-import Moya
+import RxSwift
 
 final class QiitaViewModel {
-    
+
     var models = BehaviorRelay<[QiitaModel]>(value: [])
     private var disposeBag = DisposeBag()
     let provider = MoyaProvider<QiitaAPI>()
-    
+
     func requestDataSource() {
         provider.rx.request(.user)
             .filterSuccessfulStatusCodes()
@@ -29,6 +29,3 @@ final class QiitaViewModel {
             .disposed(by: disposeBag)
     }
 }
-
-
-
