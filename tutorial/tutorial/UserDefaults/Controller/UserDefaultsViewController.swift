@@ -38,7 +38,6 @@ final class UserDefaultsViewController: UIViewController {
         self.ageLabel.text = dataModel.age?.description
         self.birthdayLabel.text = dataModel.birthday
     }
-
     
     @objc func tappedFloatingButton(){
         let alert = UIAlertController(title: "登録",
@@ -63,7 +62,6 @@ final class UserDefaultsViewController: UIViewController {
               let birthdayTextField = alert.textFields?[2] else {
             return
         }
-
         
         setupToolbar(text: birthdayTextField)
         setupBirthdayDatePicker(text: birthdayTextField)
@@ -74,7 +72,6 @@ final class UserDefaultsViewController: UIViewController {
                 return
             }
             let result = Validator.shared.validateUserInfo(name: nameTextField.text, age: Int(age), birthday: birthdayTextField.text)
-            
 
             if result.isValid {
                 let dataModel = DataModel(name: nameTextField.text, age: Int(age), birthday: birthdayTextField.text)
@@ -106,7 +103,6 @@ extension UserDefaultsViewController {
         toolBar.items = [toolBarButton]
         text.inputAccessoryView = toolBar
     }
-
     func setupBirthdayDatePicker(text: UITextField) {
         let datePickerView:UIDatePicker = UIDatePicker()
         datePickerView.frame = CGRect(x: 0, y: 0, width: self.view.frame.height, height: 100)
@@ -115,14 +111,11 @@ extension UserDefaultsViewController {
         text.inputView = datePickerView
         datePickerView.addTarget(self, action: #selector(didSelectDate(sender:)), for: UIControl.Event.valueChanged)
     }
-
-    
     @objc func didSelectDate(sender: UIDatePicker) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy年MM月dd日"
         birthdayTextField?.text = dateFormatter.string(from: sender.date)
     }
-
     @objc func doneButton(){
         birthdayTextField?.resignFirstResponder()
     }
