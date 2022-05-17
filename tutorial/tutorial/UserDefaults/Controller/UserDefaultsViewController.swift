@@ -39,7 +39,8 @@ final class UserDefaultsViewController: UIViewController {
         self.birthdayLabel.text = dataModel.birthday
     }
 
-    @objc func tappedFloatingButton() {
+    
+    @objc func tappedFloatingButton(){
         let alert = UIAlertController(title: "登録",
                                       message: nil,
                                       preferredStyle: UIAlertController.Style.alert)
@@ -56,12 +57,14 @@ final class UserDefaultsViewController: UIViewController {
             textField.placeholder = "誕生日"
         }
 
+        
         guard let nameTextField = alert.textFields?[0],
               let ageTextField = alert.textFields?[1],
               let birthdayTextField = alert.textFields?[2] else {
             return
         }
 
+        
         setupToolbar(text: birthdayTextField)
         setupBirthdayDatePicker(text: birthdayTextField)
 
@@ -71,6 +74,7 @@ final class UserDefaultsViewController: UIViewController {
                 return
             }
             let result = Validator.shared.validateUserInfo(name: nameTextField.text, age: Int(age), birthday: birthdayTextField.text)
+            
 
             if result.isValid {
                 let dataModel = DataModel(name: nameTextField.text, age: Int(age), birthday: birthdayTextField.text)
@@ -85,7 +89,7 @@ final class UserDefaultsViewController: UIViewController {
                 let alert = UIAlertController(title: "保存できません",
                                               message: result.errorMessage,
                                               preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                 self?.present(alert, animated: true, completion: nil)
             }
         }))
@@ -104,7 +108,7 @@ extension UserDefaultsViewController {
     }
 
     func setupBirthdayDatePicker(text: UITextField) {
-        let datePickerView: UIDatePicker = UIDatePicker()
+        let datePickerView:UIDatePicker = UIDatePicker()
         datePickerView.frame = CGRect(x: 0, y: 0, width: self.view.frame.height, height: 100)
         datePickerView.datePickerMode = UIDatePicker.Mode.date
         datePickerView.preferredDatePickerStyle = .wheels
@@ -112,13 +116,14 @@ extension UserDefaultsViewController {
         datePickerView.addTarget(self, action: #selector(didSelectDate(sender:)), for: UIControl.Event.valueChanged)
     }
 
+    
     @objc func didSelectDate(sender: UIDatePicker) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy年MM月dd日"
         birthdayTextField?.text = dateFormatter.string(from: sender.date)
     }
 
-    @objc func doneButton() {
+    @objc func doneButton(){
         birthdayTextField?.resignFirstResponder()
     }
 }
