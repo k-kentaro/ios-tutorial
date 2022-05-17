@@ -66,7 +66,6 @@ final class UserDefaultsViewController: UIViewController {
         
         setupToolbar(text: birthdayTextField)
         setupBirthdayDatePicker(text: birthdayTextField)
-
         alert.addAction(UIAlertAction(title: "保存", style: .default, handler: { [weak self] (ac) in
             
             guard let age = ageTextField.text else {
