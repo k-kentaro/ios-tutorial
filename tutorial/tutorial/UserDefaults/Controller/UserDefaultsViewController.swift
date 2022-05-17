@@ -68,10 +68,12 @@ final class UserDefaultsViewController: UIViewController {
         setupBirthdayDatePicker(text: birthdayTextField)
 
         alert.addAction(UIAlertAction(title: "保存", style: .default, handler: { [weak self] (ac) in
+            
             guard let age = ageTextField.text else {
                 return
             }
             let result = Validator.shared.validateUserInfo(name: nameTextField.text, age: Int(age), birthday: birthdayTextField.text)
+            
             if result.isValid {
                 let dataModel = DataModel(name: nameTextField.text, age: Int(age), birthday: birthdayTextField.text)
                 let jsonEncoder = JSONEncoder()
