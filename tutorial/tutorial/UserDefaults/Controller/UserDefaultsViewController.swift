@@ -8,13 +8,13 @@
 import UIKit
 
 final class UserDefaultsViewController: UIViewController {
-    
+
     var birthdayTextField: UITextField?
-    var toolBar:UIToolbar!
+    var toolBar: UIToolbar!
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var ageLabel: UILabel!
     @IBOutlet private weak var birthdayLabel: UILabel!
-    
+
     @IBOutlet private weak var floatingActionButton: UIButton! {
         didSet {
             floatingActionButton.layer.cornerRadius = 35
@@ -25,15 +25,15 @@ final class UserDefaultsViewController: UIViewController {
             floatingActionButton.addTarget(self, action: #selector(tappedFloatingButton), for: .touchUpInside)
         }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let jsonDecoder = JSONDecoder()
         jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
         guard let data = UserDefaults.standard.data(forKey: UserDefaults.standard.data),
               let dataModel = try? jsonDecoder.decode(DataModel.self, from: data) else {
-                  return
-              }
+            return
+        }
         self.nameLabel.text = dataModel.name
         self.ageLabel.text = dataModel.age?.description
         self.birthdayLabel.text = dataModel.birthday
@@ -44,7 +44,7 @@ final class UserDefaultsViewController: UIViewController {
         let alert = UIAlertController(title: "登録",
                                       message: nil,
                                       preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
         alert.addTextField { (textField) in
             textField.placeholder = "名前"
         }
@@ -52,10 +52,11 @@ final class UserDefaultsViewController: UIViewController {
             textField.placeholder = "年齢"
         }
         alert.addTextField { (textField) in
-            
+
             self.birthdayTextField = textField
             textField.placeholder = "誕生日"
         }
+
         
         guard let nameTextField = alert.textFields?[0],
               let ageTextField = alert.textFields?[1],
@@ -95,7 +96,7 @@ final class UserDefaultsViewController: UIViewController {
 }
 
 extension UserDefaultsViewController {
-    
+
     func setupToolbar(text: UITextField) {
         toolBar = UIToolbar()
         toolBar.sizeToFit()
@@ -115,7 +116,7 @@ extension UserDefaultsViewController {
     
     @objc func didSelectDate(sender: UIDatePicker) {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat  = "yyyy年MM月dd日"
+        dateFormatter.dateFormat = "yyyy年MM月dd日"
         birthdayTextField?.text = dateFormatter.string(from: sender.date)
     }
     

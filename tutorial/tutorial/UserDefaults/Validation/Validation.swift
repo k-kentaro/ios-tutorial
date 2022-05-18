@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 enum ValidationResult {
     case valid
     case emptyName(section: String)
@@ -27,7 +26,7 @@ enum ValidationResult {
             return false
         }
     }
-    
+
     var errorMessage: String {
         switch self {
         case .valid:
@@ -43,7 +42,7 @@ enum ValidationResult {
 }
 
 final class Validator {
-    
+
     static let shared: Validator = .init()
     private init() {}
     
@@ -52,16 +51,16 @@ final class Validator {
         guard let name = name, !name.isEmpty else {
             return .emptyName(section: "名前")
         }
-        
+
         guard let age = age else {
             return .emptyAge(section: "年齢(数字）")
         }
-        
+
         guard let birthday = birthday, !birthday.isEmpty else {
             return .emptyBirthday(section: "誕生日")
         }
-        
+
         return .valid
     }
-    
+
 }

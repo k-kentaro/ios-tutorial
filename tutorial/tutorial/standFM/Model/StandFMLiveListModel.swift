@@ -8,11 +8,11 @@
 import UIKit
 
 struct StandFMLiveListModel {
-    
+
     let iconImage: UIImage?
     let liveTitle: String
     let channelName: String
-    
+
     static func createModel() -> [StandFMLiveListModel] {
         return [
             StandFMLiveListModel(iconImage: UIImage(named: "fmImage1"), liveTitle: "片付けライブ", channelName: "私とジャンケンしてちょ"),

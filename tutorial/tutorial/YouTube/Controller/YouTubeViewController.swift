@@ -8,34 +8,34 @@
 import UIKit
 
 final class YouTubeViewController: UIViewController {
-    
+
     private let videoModel = YouTubeVideoModel.createModel()
     private let cellname = "VideoTableViewCell"
     private let reuseId = "VideoTableViewCell"
     @IBOutlet private weak var videoTableView: UITableView! {
-        didSet{
+        didSet {
             let cellNib = UINib(nibName: cellname, bundle: nil)
             videoTableView.register(cellNib, forCellReuseIdentifier: reuseId)
             videoTableView.delegate = self
             videoTableView.dataSource = self
         }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
-        
+
         let target = self.navigationController?.value(forKey: "_cachedInteractionController")
         let recognizer = UIPanGestureRecognizer(target: target, action: Selector(("handleNavigationTransition:")))
         self.view.addGestureRecognizer(recognizer)
     }
 }
 
-extension YouTubeViewController:UITableViewDelegate,UITableViewDataSource {
+extension YouTubeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         videoModel.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = videoTableView.dequeueReusableCell(withIdentifier: reuseId, for: indexPath) as? VideoTableViewCell else {
             return UITableViewCell()
@@ -43,12 +43,9 @@ extension YouTubeViewController:UITableViewDelegate,UITableViewDataSource {
         cell.configure(model: videoModel[indexPath.row])
         return cell
     }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 300
     }
-    
-    
+
 }
-
-

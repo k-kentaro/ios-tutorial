@@ -8,13 +8,13 @@
 import Foundation
 
 extension UserDefaults {
-  private var dataKey: String { "dataKey" }
-  var data: String {
-    get {
-      self.string(forKey: dataKey) ?? ""
+    private var dataKey: String { "dataKey" }
+    var data: String {
+        get {
+            self.string(forKey: dataKey) ?? ""
+        }
+        set {
+            self.setValue(newValue, forKey: dataKey)
+        }
     }
-    set {
-      self.setValue(newValue, forKey: dataKey)
-    }
-  }
 }

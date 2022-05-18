@@ -9,6 +9,6 @@ import Foundation
 
 struct DataModel: Codable {
     let name: String?
-    let age:Int?
+    let age: Int?
     let birthday: String?
 }

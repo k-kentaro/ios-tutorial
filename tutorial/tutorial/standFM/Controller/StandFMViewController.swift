@@ -8,10 +8,10 @@
 import UIKit
 
 final class StandFMViewController: UIViewController {
-    
+
     private let liveListCell = "LiveListCell"
     private let liveListModel = StandFMLiveListModel.createModel()
-    
+
     @IBOutlet private weak var liveListTableView: UITableView! {
         didSet {
             liveListTableView.register(UINib(nibName: liveListCell, bundle: nil), forCellReuseIdentifier: liveListCell)
@@ -19,24 +19,24 @@ final class StandFMViewController: UIViewController {
             liveListTableView.delegate = self
         }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true
-        
+
         let target = self.navigationController?.value(forKey: "_cachedInteractionController")
         let recognizer = UIPanGestureRecognizer(target: target, action: Selector(("handleNavigationTransition:")))
         self.view.addGestureRecognizer(recognizer)
-        
+
     }
-    
+
 }
 
-extension StandFMViewController: UITableViewDelegate,UITableViewDataSource {
+extension StandFMViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         liveListModel.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = liveListTableView.dequeueReusableCell(withIdentifier: liveListCell, for: indexPath) as? LiveListCell else {
             return UITableViewCell()
@@ -44,6 +44,5 @@ extension StandFMViewController: UITableViewDelegate,UITableViewDataSource {
         cell.configure(model: liveListModel[indexPath.row])
         return cell
     }
-    
-    
+
 }

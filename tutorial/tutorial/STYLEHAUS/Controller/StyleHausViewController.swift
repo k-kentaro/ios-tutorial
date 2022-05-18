@@ -8,10 +8,10 @@
 import UIKit
 
 final class StyleHausViewController: UIViewController {
-    
+
     private let listTableViewCell = "ListTableViewCell"
     private let listModel = StyleHausListModel.createModel()
-    
+
     @IBOutlet private weak var listTableView: UITableView! {
         didSet {
             listTableView.register(UINib(nibName: listTableViewCell, bundle: nil), forCellReuseIdentifier: listTableViewCell)
@@ -19,24 +19,24 @@ final class StyleHausViewController: UIViewController {
             listTableView.dataSource = self
         }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
-        
+
         let target = self.navigationController?.value(forKey: "_cachedInteractionController")
         let recognizer = UIPanGestureRecognizer(target: target, action: Selector(("handleNavigationTransition:")))
         self.view.addGestureRecognizer(recognizer)
-        
+
     }
-    
+
 }
 
-extension StyleHausViewController: UITableViewDelegate,UITableViewDataSource {
+extension StyleHausViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         listModel.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = listTableView.dequeueReusableCell(withIdentifier: listTableViewCell, for: indexPath) as? ListTableViewCell else {
             return UITableViewCell()
@@ -44,6 +44,5 @@ extension StyleHausViewController: UITableViewDelegate,UITableViewDataSource {
         cell.configure(model: listModel[indexPath.row])
         return cell
     }
-    
-    
+
 }
