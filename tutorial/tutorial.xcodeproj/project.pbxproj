@@ -43,6 +43,10 @@
 		B4811A57282CD4F10030C9B5 /* QiitaClient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4811A56282CD4F10030C9B5 /* QiitaClient.storyboard */; };
 		B4811A59282CD5210030C9B5 /* QiitaClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4811A58282CD5210030C9B5 /* QiitaClientViewController.swift */; };
 		B4892B0B283332CF0099894F /* QiitaSearchTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4892B0A283332CF0099894F /* QiitaSearchTag.swift */; };
+		B4892B1128348F3A0099894F /* HostingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4892B1028348F3A0099894F /* HostingAPI.swift */; };
+		B4892B17283495270099894F /* YouTubeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4892B16283495270099894F /* YouTubeViewModel.swift */; };
+		B4892B1A28349F310099894F /* StyleHausViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4892B1928349F310099894F /* StyleHausViewModel.swift */; };
+		B4BA44802834CD4700F65E6E /* StandFMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BA447F2834CD4700F65E6E /* StandFMViewModel.swift */; };
 		B4C255C02824C0800055E69B /* StyleHausViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C255BF2824C0800055E69B /* StyleHausViewController.swift */; };
 		B4C255C22824C0C40055E69B /* StyleHaus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C255C12824C0C40055E69B /* StyleHaus.storyboard */; };
 		B4C255C62824F9F40055E69B /* StandFMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C255C52824F9F40055E69B /* StandFMViewController.swift */; };
@@ -87,6 +91,10 @@
 		B4811A58282CD5210030C9B5 /* QiitaClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaClientViewController.swift; sourceTree = "<group>"; };
 		B4892B0A283332CF0099894F /* QiitaSearchTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaSearchTag.swift; sourceTree = "<group>"; };
 		B4892B0E28333AED0099894F /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		B4892B1028348F3A0099894F /* HostingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingAPI.swift; sourceTree = "<group>"; };
+		B4892B16283495270099894F /* YouTubeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeViewModel.swift; sourceTree = "<group>"; };
+		B4892B1928349F310099894F /* StyleHausViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleHausViewModel.swift; sourceTree = "<group>"; };
+		B4BA447F2834CD4700F65E6E /* StandFMViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandFMViewModel.swift; sourceTree = "<group>"; };
 		B4C255BF2824C0800055E69B /* StyleHausViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleHausViewController.swift; sourceTree = "<group>"; };
 		B4C255C12824C0C40055E69B /* StyleHaus.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StyleHaus.storyboard; sourceTree = "<group>"; };
 		B4C255C52824F9F40055E69B /* StandFMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandFMViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +151,7 @@
 				B453F868281F86B200629216 /* YouTube */,
 				B4811A42282CB0A00030C9B5 /* UserDefaults */,
 				14B555632809A555003F8E17 /* Info.plist */,
+				B4892B0F28348EEA0099894F /* TutorialUtility */,
 				B4C255C32824C0F40055E69B /* Main */,
 				14B555572809A54D003F8E17 /* SceneDelegate.swift */,
 				14B555552809A54D003F8E17 /* AppDelegate.swift */,
@@ -172,7 +181,7 @@
 		B453F868281F86B200629216 /* YouTube */ = {
 			isa = PBXGroup;
 			children = (
-				B4C255D128251A2E0055E69B /* Controller */,
+				B4892B15283494FB0099894F /* ViewModel */,
 				B4C255D028251A190055E69B /* View */,
 				B4C255CF28251A110055E69B /* Model */,
 			);
@@ -187,15 +196,6 @@
 			path = generated;
 			sourceTree = SOURCE_ROOT;
 		};
-		B48119D52828B43B0030C9B5 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				B4C255BF2824C0800055E69B /* StyleHausViewController.swift */,
-				B4C255C12824C0C40055E69B /* StyleHaus.storyboard */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		B48119D62828B4490030C9B5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +207,8 @@
 		B48119D72828B4520030C9B5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B4C255BF2824C0800055E69B /* StyleHausViewController.swift */,
+				B4C255C12824C0C40055E69B /* StyleHaus.storyboard */,
 				B48119DA2828B85B0030C9B5 /* ListTableViewCell.swift */,
 				B48119DB2828B85B0030C9B5 /* ListTableViewCell.xib */,
 			);
@@ -216,6 +218,8 @@
 		B48119DE282909AE0030C9B5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B4C255C52824F9F40055E69B /* StandFMViewController.swift */,
+				B4C255C72824FA090055E69B /* StandFM.storyboard */,
 				B48119FA282B686E0030C9B5 /* LiveListCell.swift */,
 				B48119FC282B68760030C9B5 /* LiveListCell.xib */,
 			);
@@ -228,15 +232,6 @@
 				B48119F8282B68530030C9B5 /* StandFMLiveListModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		B48119E0282909C10030C9B5 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				B4C255C72824FA090055E69B /* StandFM.storyboard */,
-				B4C255C52824F9F40055E69B /* StandFMViewController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		B4811A42282CB0A00030C9B5 /* UserDefaults */ = {
@@ -331,12 +326,44 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		B4892B0F28348EEA0099894F /* TutorialUtility */ = {
+			isa = PBXGroup;
+			children = (
+				B4892B1028348F3A0099894F /* HostingAPI.swift */,
+			);
+			path = TutorialUtility;
+			sourceTree = "<group>";
+		};
+		B4892B15283494FB0099894F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B4892B16283495270099894F /* YouTubeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B4892B1828349F0A0099894F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B4892B1928349F310099894F /* StyleHausViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B4BA447E2834CD1800F65E6E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B4BA447F2834CD4700F65E6E /* StandFMViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		B4C255BE2824C04A0055E69B /* STYLEHAUS */ = {
 			isa = PBXGroup;
 			children = (
+				B4892B1828349F0A0099894F /* ViewModel */,
 				B48119D72828B4520030C9B5 /* View */,
 				B48119D62828B4490030C9B5 /* Model */,
-				B48119D52828B43B0030C9B5 /* Controller */,
 			);
 			path = STYLEHAUS;
 			sourceTree = "<group>";
@@ -353,7 +380,7 @@
 		B4C255C42824F9420055E69B /* standFM */ = {
 			isa = PBXGroup;
 			children = (
-				B48119E0282909C10030C9B5 /* Controller */,
+				B4BA447E2834CD1800F65E6E /* ViewModel */,
 				B48119DF282909B70030C9B5 /* Model */,
 				B48119DE282909AE0030C9B5 /* View */,
 			);
@@ -371,19 +398,12 @@
 		B4C255D028251A190055E69B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B453F869281F86CA00629216 /* YouTube.storyboard */,
+				B453F86B281F879200629216 /* YouTubeViewController.swift */,
 				B4C255CA282515100055E69B /* VideoTableViewCell.xib */,
 				B4C255C9282515100055E69B /* VideoTableViewCell.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		B4C255D128251A2E0055E69B /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				B453F869281F86CA00629216 /* YouTube.storyboard */,
-				B453F86B281F879200629216 /* YouTubeViewController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -565,6 +585,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4C255C02824C0800055E69B /* StyleHausViewController.swift in Sources */,
+				B4892B17283495270099894F /* YouTubeViewModel.swift in Sources */,
+				B4892B1128348F3A0099894F /* HostingAPI.swift in Sources */,
+				B4892B1A28349F310099894F /* StyleHausViewModel.swift in Sources */,
+				B4BA44802834CD4700F65E6E /* StandFMViewModel.swift in Sources */,
 				14B5555A2809A54D003F8E17 /* ViewController.swift in Sources */,
 				B45AD42D282CE71D0032CA9E /* QiitaModel.swift in Sources */,
 				B4811A4C282CB0A00030C9B5 /* UserDefaults+.swift in Sources */,

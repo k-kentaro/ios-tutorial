@@ -5,18 +5,18 @@
 //  Created by 木元健太郎 on 2022/05/06.
 //
 
+import RxSwift
 import UIKit
 
 final class StyleHausViewController: UIViewController {
 
-    private let listTableViewCell = "ListTableViewCell"
-    private let listModel = StyleHausListModel.createModel()
+    private let listTableViewCell = R.nib.listTableViewCell.name
+    private let styleHausViewModel = StyleHausViewModel()
+    private var disposeBag = DisposeBag()
 
     @IBOutlet private weak var listTableView: UITableView! {
         didSet {
             listTableView.register(UINib(nibName: listTableViewCell, bundle: nil), forCellReuseIdentifier: listTableViewCell)
-            listTableView.delegate = self
-            listTableView.dataSource = self
         }
     }
 
@@ -27,22 +27,12 @@ final class StyleHausViewController: UIViewController {
         let target = self.navigationController?.value(forKey: "_cachedInteractionController")
         let recognizer = UIPanGestureRecognizer(target: target, action: Selector(("handleNavigationTransition:")))
         self.view.addGestureRecognizer(recognizer)
-
+        styleHausViewModel.requestDataSource()
+        bind()
     }
 
-}
-
-extension StyleHausViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        listModel.count
+    private func bind() {
+        styleHausViewModel.models
+            .bind(to: listTableView.rx.items(cellIdentifier: listTableViewCell, cellType: ListTableViewCell.self)) { _, element, cell in cell.configure(model: element) }.disposed(by: disposeBag)
     }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = listTableView.dequeueReusableCell(withIdentifier: listTableViewCell, for: indexPath) as? ListTableViewCell else {
-            return UITableViewCell()
-        }
-        cell.configure(model: listModel[indexPath.row])
-        return cell
-    }
-
 }
