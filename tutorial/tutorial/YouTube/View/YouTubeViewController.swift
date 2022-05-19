@@ -33,6 +33,8 @@ final class YouTubeViewController: UIViewController {
 
     private func bind() {
         youtubeViewModel.models
-            .bind(to: videoTableView.rx.items(cellIdentifier: videoTableViewCell, cellType: VideoTableViewCell.self)) { _, element, cell in cell.configure(model: element) }.disposed(by: disposeBag)
+            .bind(to: videoTableView.rx.items(cellIdentifier: videoTableViewCell, cellType: VideoTableViewCell.self)) { _, element, cell in
+                cell.configure(model: element) 
+            }.disposed(by: disposeBag)
     }
 }

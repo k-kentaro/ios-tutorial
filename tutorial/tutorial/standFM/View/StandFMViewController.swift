@@ -34,6 +34,8 @@ final class StandFMViewController: UIViewController {
 
     private func bind() {
         standFMViewModel.models
-            .bind(to: liveListTableView.rx.items(cellIdentifier: liveListCell, cellType: LiveListCell.self)) { _, element, cell in cell.configure(model: element) }.disposed(by: disposeBag)
+            .bind(to: liveListTableView.rx.items(cellIdentifier: liveListCell, cellType: LiveListCell.self)) { _, element, cell in
+                cell.configure(model: element) 
+            }.disposed(by: disposeBag)
     }
 }

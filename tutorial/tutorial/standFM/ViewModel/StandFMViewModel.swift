@@ -14,8 +14,8 @@ import RxSwift
 final class StandFMViewModel {
 
     var models = BehaviorRelay<[StandFMLiveListModel]>(value: [])
-    private var disposeBag = DisposeBag()
     let provider = MoyaProvider<HostingAPI>()
+    private var disposeBag = DisposeBag()
 
     func requestDataSource() {
         provider.rx.request(.standfm)

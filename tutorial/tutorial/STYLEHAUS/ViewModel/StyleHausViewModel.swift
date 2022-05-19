@@ -14,8 +14,8 @@ import RxSwift
 final class StyleHausViewModel {
 
     var models = BehaviorRelay<[StyleHausListModel]>(value: [])
-    private var disposeBag = DisposeBag()
     let provider = MoyaProvider<HostingAPI>()
+    private var disposeBag = DisposeBag()
 
     func requestDataSource() {
         provider.rx.request(.stylehaus)

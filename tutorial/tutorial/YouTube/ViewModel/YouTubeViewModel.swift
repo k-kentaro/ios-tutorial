@@ -14,8 +14,8 @@ import RxSwift
 final class YouTubeViewModel {
 
     var models = BehaviorRelay<[YouTubeVideoModel]>(value: [])
-    private var disposeBag = DisposeBag()
     let provider = MoyaProvider<HostingAPI>()
+    private var disposeBag = DisposeBag()
 
     func requestDataSource() {
         provider.rx.request(.youtube)
