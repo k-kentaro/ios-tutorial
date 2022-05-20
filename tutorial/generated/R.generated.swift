@@ -89,7 +89,7 @@ struct R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 7 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 8 storyboards.
   struct storyboard {
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
@@ -101,6 +101,8 @@ struct R: Rswift.Validatable {
     static let standFM = _R.storyboard.standFM()
     /// Storyboard `StyleHaus`.
     static let styleHaus = _R.storyboard.styleHaus()
+    /// Storyboard `Todo`.
+    static let todo = _R.storyboard.todo()
     /// Storyboard `UserDefaults`.
     static let userDefaults = _R.storyboard.userDefaults()
     /// Storyboard `YouTube`.
@@ -138,6 +140,13 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "StyleHaus", bundle: ...)`
     static func styleHaus(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.styleHaus)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "Todo", bundle: ...)`
+    static func todo(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.todo)
     }
     #endif
 
@@ -491,7 +500,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 4 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 5 nibs.
   struct nib {
     /// Nib `ListTableViewCell`.
     static let listTableViewCell = _R.nib._ListTableViewCell()
@@ -499,6 +508,8 @@ struct R: Rswift.Validatable {
     static let liveListCell = _R.nib._LiveListCell()
     /// Nib `TableViewCell`.
     static let tableViewCell = _R.nib._TableViewCell()
+    /// Nib `TodoCell`.
+    static let todoCell = _R.nib._TodoCell()
     /// Nib `VideoTableViewCell`.
     static let videoTableViewCell = _R.nib._VideoTableViewCell()
 
@@ -527,6 +538,14 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UINib(name: "TodoCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.todoCell) instead")
+    static func todoCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.todoCell)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UINib(name: "VideoTableViewCell", in: bundle)`
     @available(*, deprecated, message: "Use UINib(resource: R.nib.videoTableViewCell) instead")
     static func videoTableViewCell(_: Void = ()) -> UIKit.UINib {
@@ -544,6 +563,10 @@ struct R: Rswift.Validatable {
 
     static func tableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> TableViewCell? {
       return R.nib.tableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? TableViewCell
+    }
+
+    static func todoCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> TodoCell? {
+      return R.nib.todoCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? TodoCell
     }
 
     static func videoTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> VideoTableViewCell? {
@@ -622,6 +645,17 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
 
+    struct _TodoCell: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "TodoCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> TodoCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? TodoCell
+      }
+
+      fileprivate init() {}
+    }
+
     struct _VideoTableViewCell: Rswift.NibResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "VideoTableViewCell"
@@ -660,6 +694,9 @@ struct _R: Rswift.Validatable {
       #endif
       #if os(iOS) || os(tvOS)
       try styleHaus.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
+      try todo.validate()
       #endif
       #if os(iOS) || os(tvOS)
       try userDefaults.validate()
@@ -755,6 +792,23 @@ struct _R: Rswift.Validatable {
         if UIKit.UIImage(named: "ハート", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ハート' is used in storyboard 'StyleHaus', but couldn't be loaded.") }
         if UIKit.UIImage(named: "ホームアイコン", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ホームアイコン' is used in storyboard 'StyleHaus', but couldn't be loaded.") }
         if UIKit.UIImage(named: "メニュー", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'メニュー' is used in storyboard 'StyleHaus', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    struct todo: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = TodoViewController
+
+      let bundle = R.hostingBundle
+      let name = "Todo"
+
+      static func validate() throws {
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "plus") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'plus' is used in storyboard 'Todo', but couldn't be loaded.") } }
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
       }
