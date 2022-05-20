@@ -5,18 +5,18 @@
 //  Created by 木元健太郎 on 2022/05/06.
 //
 
+import RxSwift
 import UIKit
 
 final class StandFMViewController: UIViewController {
 
-    private let liveListCell = "LiveListCell"
-    private let liveListModel = StandFMLiveListModel.createModel()
+    private let liveListCell = R.nib.liveListCell.name
+    private let standFMViewModel = StandFMViewModel()
+    private var disposeBag = DisposeBag()
 
     @IBOutlet private weak var liveListTableView: UITableView! {
         didSet {
             liveListTableView.register(UINib(nibName: liveListCell, bundle: nil), forCellReuseIdentifier: liveListCell)
-            liveListTableView.dataSource = self
-            liveListTableView.delegate = self
         }
     }
 
@@ -28,21 +28,14 @@ final class StandFMViewController: UIViewController {
         let recognizer = UIPanGestureRecognizer(target: target, action: Selector(("handleNavigationTransition:")))
         self.view.addGestureRecognizer(recognizer)
 
+        standFMViewModel.requestDataSource()
+        bind()
     }
 
-}
-
-extension StandFMViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        liveListModel.count
+    private func bind() {
+        standFMViewModel.models
+            .bind(to: liveListTableView.rx.items(cellIdentifier: liveListCell, cellType: LiveListCell.self)) { _, element, cell in
+                cell.configure(model: element) 
+            }.disposed(by: disposeBag)
     }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = liveListTableView.dequeueReusableCell(withIdentifier: liveListCell, for: indexPath) as? LiveListCell else {
-            return UITableViewCell()
-        }
-        cell.configure(model: liveListModel[indexPath.row])
-        return cell
-    }
-
 }

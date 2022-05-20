@@ -15,7 +15,11 @@ final class ListTableViewCell: UITableViewCell {
     @IBOutlet private weak var writerName: UILabel!
 
     func configure(model: StyleHausListModel) {
-        articleImage.image = model.articleImage
+        guard let image = model.articleImage else {
+            return
+        }
+        let url = URL(string: image)
+        articleImage.kf.setImage(with: url)
         articleText.text = model.articleText
         articleCategory.text = model.articleCategory
         writerName.text = model.writerName

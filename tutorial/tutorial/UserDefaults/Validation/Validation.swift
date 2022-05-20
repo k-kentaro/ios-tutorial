@@ -12,8 +12,7 @@ enum ValidationResult {
     case emptyName(section: String)
     case emptyAge(section: String)
     case emptyBirthday(section: String)
-    
-    
+
     var isValid: Bool {
         switch self {
         case .valid:
@@ -45,9 +44,9 @@ final class Validator {
 
     static let shared: Validator = .init()
     private init() {}
-    
+
     func validateUserInfo(name: String?, age: Int?, birthday: String?) -> ValidationResult {
-        
+
         guard let name = name, !name.isEmpty else {
             return .emptyName(section: "名前")
         }
