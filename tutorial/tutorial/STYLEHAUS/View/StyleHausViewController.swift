@@ -34,7 +34,7 @@ final class StyleHausViewController: UIViewController {
     private func bind() {
         styleHausViewModel.models
             .bind(to: listTableView.rx.items(cellIdentifier: listTableViewCell, cellType: ListTableViewCell.self)) { _, element, cell in
-                cell.configure(model: element) 
+                cell.configure(model: element)
             }.disposed(by: disposeBag)
     }
 }

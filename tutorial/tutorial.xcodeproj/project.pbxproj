@@ -47,6 +47,14 @@
 		B4892B17283495270099894F /* YouTubeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4892B16283495270099894F /* YouTubeViewModel.swift */; };
 		B4892B1A28349F310099894F /* StyleHausViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4892B1928349F310099894F /* StyleHausViewModel.swift */; };
 		B4BA44802834CD4700F65E6E /* StandFMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BA447F2834CD4700F65E6E /* StandFMViewModel.swift */; };
+		B4BA44CE2835E29B00F65E6E /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BA44CD2835E29B00F65E6E /* TodoModel.swift */; };
+		B4BA44D32835E2DD00F65E6E /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BA44D22835E2DD00F65E6E /* TodoViewController.swift */; };
+		B4BA44D52835E2F700F65E6E /* Todo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4BA44D42835E2F700F65E6E /* Todo.storyboard */; };
+		B4BA44D82835E32800F65E6E /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BA44D62835E32800F65E6E /* TodoCell.swift */; };
+		B4BA44D92835E32800F65E6E /* TodoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4BA44D72835E32800F65E6E /* TodoCell.xib */; };
+		B4BA45222836044400F65E6E /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = B4BA45212836044400F65E6E /* Realm */; };
+		B4BA45242836044400F65E6E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B4BA45232836044400F65E6E /* RealmSwift */; };
+		B4BA45272836288F00F65E6E /* TodoValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BA45262836288F00F65E6E /* TodoValidator.swift */; };
 		B4C255C02824C0800055E69B /* StyleHausViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C255BF2824C0800055E69B /* StyleHausViewController.swift */; };
 		B4C255C22824C0C40055E69B /* StyleHaus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C255C12824C0C40055E69B /* StyleHaus.storyboard */; };
 		B4C255C62824F9F40055E69B /* StandFMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C255C52824F9F40055E69B /* StandFMViewController.swift */; };
@@ -95,6 +103,12 @@
 		B4892B16283495270099894F /* YouTubeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeViewModel.swift; sourceTree = "<group>"; };
 		B4892B1928349F310099894F /* StyleHausViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleHausViewModel.swift; sourceTree = "<group>"; };
 		B4BA447F2834CD4700F65E6E /* StandFMViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandFMViewModel.swift; sourceTree = "<group>"; };
+		B4BA44CD2835E29B00F65E6E /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		B4BA44D22835E2DD00F65E6E /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
+		B4BA44D42835E2F700F65E6E /* Todo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Todo.storyboard; sourceTree = "<group>"; };
+		B4BA44D62835E32800F65E6E /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
+		B4BA44D72835E32800F65E6E /* TodoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoCell.xib; sourceTree = "<group>"; };
+		B4BA45262836288F00F65E6E /* TodoValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoValidator.swift; sourceTree = "<group>"; };
 		B4C255BF2824C0800055E69B /* StyleHausViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleHausViewController.swift; sourceTree = "<group>"; };
 		B4C255C12824C0C40055E69B /* StyleHaus.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StyleHaus.storyboard; sourceTree = "<group>"; };
 		B4C255C52824F9F40055E69B /* StandFMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandFMViewController.swift; sourceTree = "<group>"; };
@@ -115,7 +129,9 @@
 				B404FBD4282E04310049BDD1 /* Moya in Frameworks */,
 				B45AD450282D03F10032CA9E /* RxCocoa in Frameworks */,
 				B404FBD2282E04310049BDD1 /* CombineMoya in Frameworks */,
+				B4BA45222836044400F65E6E /* Realm in Frameworks */,
 				B404FBD8282E04310049BDD1 /* RxMoya in Frameworks */,
+				B4BA45242836044400F65E6E /* RealmSwift in Frameworks */,
 				B45AD452282D03F10032CA9E /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +161,7 @@
 		14B555542809A54D003F8E17 /* tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				B4BA44CC2835E22900F65E6E /* RealmTodo */,
 				B4811A51282CD4490030C9B5 /* QiitaClient */,
 				B4C255C42824F9420055E69B /* standFM */,
 				B4C255BE2824C04A0055E69B /* STYLEHAUS */,
@@ -358,6 +375,51 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		B4BA44CC2835E22900F65E6E /* RealmTodo */ = {
+			isa = PBXGroup;
+			children = (
+				B4BA45252836287800F65E6E /* Validation */,
+				B4BA44D12835E2BA00F65E6E /* View */,
+				B4BA44D02835E2AF00F65E6E /* Controller */,
+				B4BA44CF2835E2A300F65E6E /* Model */,
+			);
+			name = RealmTodo;
+			sourceTree = "<group>";
+		};
+		B4BA44CF2835E2A300F65E6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B4BA44CD2835E29B00F65E6E /* TodoModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B4BA44D02835E2AF00F65E6E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4BA44D22835E2DD00F65E6E /* TodoViewController.swift */,
+				B4BA44D42835E2F700F65E6E /* Todo.storyboard */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B4BA44D12835E2BA00F65E6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4BA44D62835E32800F65E6E /* TodoCell.swift */,
+				B4BA44D72835E32800F65E6E /* TodoCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B4BA45252836287800F65E6E /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				B4BA45262836288F00F65E6E /* TodoValidator.swift */,
+			);
+			name = Validation;
+			sourceTree = "<group>";
+		};
 		B4C255BE2824C04A0055E69B /* STYLEHAUS */ = {
 			isa = PBXGroup;
 			children = (
@@ -434,6 +496,8 @@
 				B404FBD3282E04310049BDD1 /* Moya */,
 				B404FBD5282E04310049BDD1 /* ReactiveMoya */,
 				B404FBD7282E04310049BDD1 /* RxMoya */,
+				B4BA45212836044400F65E6E /* Realm */,
+				B4BA45232836044400F65E6E /* RealmSwift */,
 			);
 			productName = tutorial;
 			productReference = 14B555522809A54D003F8E17 /* tutorial.app */;
@@ -467,6 +531,7 @@
 				B45AD41B282CE3540032CA9E /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				B45AD44E282D03F10032CA9E /* XCRemoteSwiftPackageReference "RxSwift" */,
 				B404FBD0282E04310049BDD1 /* XCRemoteSwiftPackageReference "Moya" */,
+				B4BA45202836044300F65E6E /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 14B555532809A54D003F8E17 /* Products */;
 			projectDirPath = "";
@@ -484,12 +549,14 @@
 			files = (
 				B4C255CC282515100055E69B /* VideoTableViewCell.xib in Resources */,
 				B45AD433282CED8D0032CA9E /* TableViewCell.xib in Resources */,
+				B4BA44D52835E2F700F65E6E /* Todo.storyboard in Resources */,
 				B4C255C82824FA090055E69B /* StandFM.storyboard in Resources */,
 				B4811A57282CD4F10030C9B5 /* QiitaClient.storyboard in Resources */,
 				14B555622809A555003F8E17 /* LaunchScreen.storyboard in Resources */,
 				14B5555F2809A555003F8E17 /* Assets.xcassets in Resources */,
 				B48119FD282B68760030C9B5 /* LiveListCell.xib in Resources */,
 				B453F86A281F86CA00629216 /* YouTube.storyboard in Resources */,
+				B4BA44D92835E32800F65E6E /* TodoCell.xib in Resources */,
 				B48119DD2828B85B0030C9B5 /* ListTableViewCell.xib in Resources */,
 				14B5555D2809A54D003F8E17 /* Main.storyboard in Resources */,
 				B4C255C22824C0C40055E69B /* StyleHaus.storyboard in Resources */,
@@ -586,15 +653,19 @@
 			files = (
 				B4C255C02824C0800055E69B /* StyleHausViewController.swift in Sources */,
 				B4892B17283495270099894F /* YouTubeViewModel.swift in Sources */,
+				B4BA45272836288F00F65E6E /* TodoValidator.swift in Sources */,
+				B4BA44D32835E2DD00F65E6E /* TodoViewController.swift in Sources */,
 				B4892B1128348F3A0099894F /* HostingAPI.swift in Sources */,
 				B4892B1A28349F310099894F /* StyleHausViewModel.swift in Sources */,
 				B4BA44802834CD4700F65E6E /* StandFMViewModel.swift in Sources */,
+				B4BA44CE2835E29B00F65E6E /* TodoModel.swift in Sources */,
 				14B5555A2809A54D003F8E17 /* ViewController.swift in Sources */,
 				B45AD42D282CE71D0032CA9E /* QiitaModel.swift in Sources */,
 				B4811A4C282CB0A00030C9B5 /* UserDefaults+.swift in Sources */,
 				B48119F9282B68530030C9B5 /* StandFMLiveListModel.swift in Sources */,
 				B4C255CB282515100055E69B /* VideoTableViewCell.swift in Sources */,
 				B4811A4F282CB0A00030C9B5 /* DataModel.swift in Sources */,
+				B4BA44D82835E32800F65E6E /* TodoCell.swift in Sources */,
 				B4811A50282CB0A00030C9B5 /* Validation.swift in Sources */,
 				B453F86C281F879200629216 /* YouTubeViewController.swift in Sources */,
 				14B555562809A54D003F8E17 /* AppDelegate.swift in Sources */,
@@ -856,6 +927,14 @@
 				kind = branch;
 			};
 		};
+		B4BA45202836044300F65E6E /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -893,6 +972,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B45AD44E282D03F10032CA9E /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		B4BA45212836044400F65E6E /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4BA45202836044300F65E6E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		B4BA45232836044400F65E6E /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4BA45202836044300F65E6E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
