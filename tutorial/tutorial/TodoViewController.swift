@@ -43,7 +43,7 @@ final class TodoViewController: UIViewController {
 
     @objc func tappedFloatingButton() {
         let alert = UIAlertController(title: "登録", message: nil, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "CANCEL", style: .cancel, handler: nil))
         alert.addTextField { (textField) in
             textField.placeholder = "タイトルを入力してください"
         }
@@ -55,9 +55,15 @@ final class TodoViewController: UIViewController {
             self.fixedDateTextField = textField
         }
 
-        guard let titleTextField = alert.textFields?[0],
-              let contentsTextField = alert.textFields?[1],
-              let fixedDateTextField = alert.textFields?[2] else {
+        enum AlertTextFields: Int {
+            case title
+            case contents
+            case fixedDate
+        }
+
+        guard let titleTextField = alert.textFields?[AlertTextFields.title.rawValue],
+              let contentsTextField = alert.textFields?[AlertTextFields.contents.rawValue],
+              let fixedDateTextField = alert.textFields?[AlertTextFields.fixedDate.rawValue] else {
             return
         }
 
@@ -65,6 +71,7 @@ final class TodoViewController: UIViewController {
         setupfixedDatePicker(text: fixedDateTextField)
 
         alert.addAction(UIAlertAction(title: "保存", style: .default, handler: { [weak self] (ac) in
+            guard let self = self else { return }
             let result = TodoValidator.shared.validateTodoInfo(title: titleTextField.text, contents: contentsTextField.text, fixedDate: fixedDateTextField.text)
 
             if result.isValid {
@@ -72,18 +79,18 @@ final class TodoViewController: UIViewController {
                 let todo = ToDoModel()
                 todo.title = titleTextField.text
                 todo.contents = contentsTextField.text
-                todo.createDay = self?.nowDateCreate()
+                todo.createDay = self.nowDateCreate()
                 todo.fixedDate = fixedDateTextField.text
                 try? realm.write {
                     realm.add(todo)
                 }
-                self?.tableView.reloadData()
+                self.tableView.reloadData()
             } else {
                 let alert = UIAlertController(title: "保存できません",
                                               message: result.errorMessage,
                                               preferredStyle: UIAlertController.Style.alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                self?.present(alert, animated: true, completion: nil)
+                self.present(alert, animated: true, completion: nil)
             }
         }))
         present(alert, animated: true, completion: nil)
