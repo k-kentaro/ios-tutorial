@@ -34,8 +34,6 @@ final class TodoViewController: UIViewController {
 
         guard let realm = try? Realm() else { return }
         todoModel = realm.objects(ToDoModel.self)
-
-        tableView.reloadData()
     }
 
     override func viewWillAppear(_ animated: Bool) {
