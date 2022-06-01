@@ -29,6 +29,24 @@
 		B45AD438282CF9F70032CA9E /* QiitaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45AD437282CF9F70032CA9E /* QiitaViewModel.swift */; };
 		B45AD450282D03F10032CA9E /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B45AD44F282D03F10032CA9E /* RxCocoa */; };
 		B45AD452282D03F10032CA9E /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B45AD451282D03F10032CA9E /* RxSwift */; };
+		B45F25C8283B4F9000170675 /* MCUAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F25C7283B4F9000170675 /* MCUAPI.swift */; };
+		B45F25CB283B4FC400170675 /* MCUViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F25CA283B4FC400170675 /* MCUViewModel.swift */; };
+		B45F25CD283B501000170675 /* MCUModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F25CC283B501000170675 /* MCUModel.swift */; };
+		B45F25CF283B503D00170675 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F25CE283B503D00170675 /* FavoriteViewController.swift */; };
+		B45F25D2283B505400170675 /* FavoriteViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45F25D1283B505400170675 /* FavoriteViewController.storyboard */; };
+		B45F25D4283B509500170675 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F25D3283B509500170675 /* HomeViewController.swift */; };
+		B45F25D6283B50A900170675 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45F25D5283B50A900170675 /* Home.storyboard */; };
+		B45F25DA283B522400170675 /* MCUmovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F25D9283B522400170675 /* MCUmovieCell.swift */; };
+		B45F25DC283B524500170675 /* MCUmovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45F25DB283B524500170675 /* MCUmovieCell.xib */; };
+		B45F25DE283B526500170675 /* MCUmovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F25DD283B526500170675 /* MCUmovieViewController.swift */; };
+		B45F25E0283B528800170675 /* MCUmovie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45F25DF283B528800170675 /* MCUmovie.storyboard */; };
+		B45F25E2283B52BF00170675 /* MCUdramaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F25E1283B52BF00170675 /* MCUdramaCell.swift */; };
+		B45F25E4283B52E000170675 /* MCUdramaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45F25E3283B52DF00170675 /* MCUdramaCell.xib */; };
+		B45F25E6283B531400170675 /* MCUdramaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F25E5283B531400170675 /* MCUdramaViewController.swift */; };
+		B45F25E8283B533100170675 /* MCUdrama.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45F25E7283B533100170675 /* MCUdrama.storyboard */; };
+		B45F25EB283B538B00170675 /* Parchment in Frameworks */ = {isa = PBXBuildFile; productRef = B45F25EA283B538B00170675 /* Parchment */; };
+		B45F25ED283B62DC00170675 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F25EC283B62DC00170675 /* DetailViewController.swift */; };
+		B45F25EF283B62EE00170675 /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45F25EE283B62EE00170675 /* DetailViewController.storyboard */; };
 		B48119DC2828B85B0030C9B5 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48119DA2828B85B0030C9B5 /* ListTableViewCell.swift */; };
 		B48119DD2828B85B0030C9B5 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48119DB2828B85B0030C9B5 /* ListTableViewCell.xib */; };
 		B48119F7282B673D0030C9B5 /* StyleHausListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48119F6282B673D0030C9B5 /* StyleHausListModel.swift */; };
@@ -55,6 +73,13 @@
 		B4BA45222836044400F65E6E /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = B4BA45212836044400F65E6E /* Realm */; };
 		B4BA45242836044400F65E6E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B4BA45232836044400F65E6E /* RealmSwift */; };
 		B4BA45272836288F00F65E6E /* TodoValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BA45262836288F00F65E6E /* TodoValidator.swift */; };
+		B4BD48C1283DBE5000F72712 /* Instantiate in Frameworks */ = {isa = PBXBuildFile; productRef = B4BD48C0283DBE5000F72712 /* Instantiate */; };
+		B4BD48C3283DBE5000F72712 /* InstantiateStandard in Frameworks */ = {isa = PBXBuildFile; productRef = B4BD48C2283DBE5000F72712 /* InstantiateStandard */; };
+		B4BD48C8283E199600F72712 /* FavoriteItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD48C6283E199600F72712 /* FavoriteItemCell.swift */; };
+		B4BD48C9283E199600F72712 /* FavoriteItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4BD48C7283E199600F72712 /* FavoriteItemCell.xib */; };
+		B4BD48CB283E226900F72712 /* FavoriteDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD48CA283E226900F72712 /* FavoriteDataModel.swift */; };
+		B4BD48CD283F321B00F72712 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD48CC283F321B00F72712 /* SwipeViewController.swift */; };
+		B4BD48CF283F323200F72712 /* SwipeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4BD48CE283F323200F72712 /* SwipeView.storyboard */; };
 		B4C255C02824C0800055E69B /* StyleHausViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C255BF2824C0800055E69B /* StyleHausViewController.swift */; };
 		B4C255C22824C0C40055E69B /* StyleHaus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C255C12824C0C40055E69B /* StyleHaus.storyboard */; };
 		B4C255C62824F9F40055E69B /* StandFMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C255C52824F9F40055E69B /* StandFMViewController.swift */; };
@@ -84,6 +109,23 @@
 		B45AD430282CED8C0032CA9E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		B45AD431282CED8D0032CA9E /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		B45AD437282CF9F70032CA9E /* QiitaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaViewModel.swift; sourceTree = "<group>"; };
+		B45F25C7283B4F9000170675 /* MCUAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCUAPI.swift; sourceTree = "<group>"; };
+		B45F25CA283B4FC400170675 /* MCUViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCUViewModel.swift; sourceTree = "<group>"; };
+		B45F25CC283B501000170675 /* MCUModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCUModel.swift; sourceTree = "<group>"; };
+		B45F25CE283B503D00170675 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		B45F25D1283B505400170675 /* FavoriteViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavoriteViewController.storyboard; sourceTree = "<group>"; };
+		B45F25D3283B509500170675 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B45F25D5283B50A900170675 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		B45F25D9283B522400170675 /* MCUmovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCUmovieCell.swift; sourceTree = "<group>"; };
+		B45F25DB283B524500170675 /* MCUmovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCUmovieCell.xib; sourceTree = "<group>"; };
+		B45F25DD283B526500170675 /* MCUmovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCUmovieViewController.swift; sourceTree = "<group>"; };
+		B45F25DF283B528800170675 /* MCUmovie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MCUmovie.storyboard; sourceTree = "<group>"; };
+		B45F25E1283B52BF00170675 /* MCUdramaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCUdramaCell.swift; sourceTree = "<group>"; };
+		B45F25E3283B52DF00170675 /* MCUdramaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCUdramaCell.xib; sourceTree = "<group>"; };
+		B45F25E5283B531400170675 /* MCUdramaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCUdramaViewController.swift; sourceTree = "<group>"; };
+		B45F25E7283B533100170675 /* MCUdrama.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MCUdrama.storyboard; sourceTree = "<group>"; };
+		B45F25EC283B62DC00170675 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B45F25EE283B62EE00170675 /* DetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
 		B48119DA2828B85B0030C9B5 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		B48119DB2828B85B0030C9B5 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 		B48119F6282B673D0030C9B5 /* StyleHausListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleHausListModel.swift; sourceTree = "<group>"; };
@@ -98,7 +140,6 @@
 		B4811A56282CD4F10030C9B5 /* QiitaClient.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QiitaClient.storyboard; sourceTree = "<group>"; };
 		B4811A58282CD5210030C9B5 /* QiitaClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaClientViewController.swift; sourceTree = "<group>"; };
 		B4892B0A283332CF0099894F /* QiitaSearchTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaSearchTag.swift; sourceTree = "<group>"; };
-		B4892B0E28333AED0099894F /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		B4892B1028348F3A0099894F /* HostingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingAPI.swift; sourceTree = "<group>"; };
 		B4892B16283495270099894F /* YouTubeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeViewModel.swift; sourceTree = "<group>"; };
 		B4892B1928349F310099894F /* StyleHausViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleHausViewModel.swift; sourceTree = "<group>"; };
@@ -109,6 +150,11 @@
 		B4BA44D62835E32800F65E6E /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
 		B4BA44D72835E32800F65E6E /* TodoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoCell.xib; sourceTree = "<group>"; };
 		B4BA45262836288F00F65E6E /* TodoValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoValidator.swift; sourceTree = "<group>"; };
+		B4BD48C6283E199600F72712 /* FavoriteItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteItemCell.swift; sourceTree = "<group>"; };
+		B4BD48C7283E199600F72712 /* FavoriteItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteItemCell.xib; sourceTree = "<group>"; };
+		B4BD48CA283E226900F72712 /* FavoriteDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDataModel.swift; sourceTree = "<group>"; };
+		B4BD48CC283F321B00F72712 /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
+		B4BD48CE283F323200F72712 /* SwipeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SwipeView.storyboard; sourceTree = "<group>"; };
 		B4C255BF2824C0800055E69B /* StyleHausViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleHausViewController.swift; sourceTree = "<group>"; };
 		B4C255C12824C0C40055E69B /* StyleHaus.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StyleHaus.storyboard; sourceTree = "<group>"; };
 		B4C255C52824F9F40055E69B /* StandFMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandFMViewController.swift; sourceTree = "<group>"; };
@@ -130,9 +176,12 @@
 				B45AD450282D03F10032CA9E /* RxCocoa in Frameworks */,
 				B404FBD2282E04310049BDD1 /* CombineMoya in Frameworks */,
 				B4BA45222836044400F65E6E /* Realm in Frameworks */,
+				B45F25EB283B538B00170675 /* Parchment in Frameworks */,
 				B404FBD8282E04310049BDD1 /* RxMoya in Frameworks */,
 				B4BA45242836044400F65E6E /* RealmSwift in Frameworks */,
+				B4BD48C3283DBE5000F72712 /* InstantiateStandard in Frameworks */,
 				B45AD452282D03F10032CA9E /* RxSwift in Frameworks */,
+				B4BD48C1283DBE5000F72712 /* Instantiate in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +191,6 @@
 		14B555492809A54D003F8E17 = {
 			isa = PBXGroup;
 			children = (
-				B4892B0E28333AED0099894F /* .swiftlint.yml */,
 				14B555542809A54D003F8E17 /* tutorial */,
 				14B555532809A54D003F8E17 /* Products */,
 				6C532231A2CEFC9E89E0F860 /* Pods */,
@@ -161,6 +209,7 @@
 		14B555542809A54D003F8E17 /* tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				B45F25BD283B4C3400170675 /* MCU */,
 				B4BA44CC2835E22900F65E6E /* RealmTodo */,
 				B4811A51282CD4490030C9B5 /* QiitaClient */,
 				B4C255C42824F9420055E69B /* standFM */,
@@ -212,6 +261,99 @@
 			);
 			path = generated;
 			sourceTree = SOURCE_ROOT;
+		};
+		B45F25BD283B4C3400170675 /* MCU */ = {
+			isa = PBXGroup;
+			children = (
+				B45F25C6283B4F4700170675 /* ViewModel */,
+				B45F25C5283B4F3E00170675 /* Model */,
+				B45F25C4283B4CCA00170675 /* Favorite */,
+				B45F25C3283B4CC000170675 /* Home */,
+				B45F25C1283B4C9300170675 /* Utility */,
+				B45F25C0283B4C8200170675 /* DetailView */,
+				B45F25BE283B4C4500170675 /* MCUmovie */,
+				B45F25BF283B4C6600170675 /* MCUdrama */,
+			);
+			path = MCU;
+			sourceTree = "<group>";
+		};
+		B45F25BE283B4C4500170675 /* MCUmovie */ = {
+			isa = PBXGroup;
+			children = (
+				B45F25D9283B522400170675 /* MCUmovieCell.swift */,
+				B45F25DB283B524500170675 /* MCUmovieCell.xib */,
+				B45F25DD283B526500170675 /* MCUmovieViewController.swift */,
+				B45F25DF283B528800170675 /* MCUmovie.storyboard */,
+			);
+			path = MCUmovie;
+			sourceTree = "<group>";
+		};
+		B45F25BF283B4C6600170675 /* MCUdrama */ = {
+			isa = PBXGroup;
+			children = (
+				B45F25E1283B52BF00170675 /* MCUdramaCell.swift */,
+				B45F25E3283B52DF00170675 /* MCUdramaCell.xib */,
+				B45F25E5283B531400170675 /* MCUdramaViewController.swift */,
+				B45F25E7283B533100170675 /* MCUdrama.storyboard */,
+			);
+			path = MCUdrama;
+			sourceTree = "<group>";
+		};
+		B45F25C0283B4C8200170675 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				B45F25EC283B62DC00170675 /* DetailViewController.swift */,
+				B45F25EE283B62EE00170675 /* DetailViewController.storyboard */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		B45F25C1283B4C9300170675 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B45F25C7283B4F9000170675 /* MCUAPI.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B45F25C3283B4CC000170675 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B45F25D3283B509500170675 /* HomeViewController.swift */,
+				B45F25D5283B50A900170675 /* Home.storyboard */,
+				B4BD48CC283F321B00F72712 /* SwipeViewController.swift */,
+				B4BD48CE283F323200F72712 /* SwipeView.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B45F25C4283B4CCA00170675 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				B45F25CE283B503D00170675 /* FavoriteViewController.swift */,
+				B45F25D1283B505400170675 /* FavoriteViewController.storyboard */,
+				B4BD48C6283E199600F72712 /* FavoriteItemCell.swift */,
+				B4BD48C7283E199600F72712 /* FavoriteItemCell.xib */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		B45F25C5283B4F3E00170675 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B45F25CC283B501000170675 /* MCUModel.swift */,
+				B4BD48CA283E226900F72712 /* FavoriteDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B45F25C6283B4F4700170675 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B45F25CA283B4FC400170675 /* MCUViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
 		};
 		B48119D62828B4490030C9B5 /* Model */ = {
 			isa = PBXGroup;
@@ -481,7 +623,6 @@
 				14B5554F2809A54D003F8E17 /* Frameworks */,
 				14B555502809A54D003F8E17 /* Resources */,
 				523AA7A121D41FA08FB86FF8 /* [CP] Embed Pods Frameworks */,
-				B4892B0C283339E10099894F /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -498,6 +639,9 @@
 				B404FBD7282E04310049BDD1 /* RxMoya */,
 				B4BA45212836044400F65E6E /* Realm */,
 				B4BA45232836044400F65E6E /* RealmSwift */,
+				B45F25EA283B538B00170675 /* Parchment */,
+				B4BD48C0283DBE5000F72712 /* Instantiate */,
+				B4BD48C2283DBE5000F72712 /* InstantiateStandard */,
 			);
 			productName = tutorial;
 			productReference = 14B555522809A54D003F8E17 /* tutorial.app */;
@@ -532,6 +676,8 @@
 				B45AD44E282D03F10032CA9E /* XCRemoteSwiftPackageReference "RxSwift" */,
 				B404FBD0282E04310049BDD1 /* XCRemoteSwiftPackageReference "Moya" */,
 				B4BA45202836044300F65E6E /* XCRemoteSwiftPackageReference "realm-swift" */,
+				B45F25E9283B538A00170675 /* XCRemoteSwiftPackageReference "Parchment" */,
+				B4BD48BF283DBE5000F72712 /* XCRemoteSwiftPackageReference "Instantiate" */,
 			);
 			productRefGroup = 14B555532809A54D003F8E17 /* Products */;
 			projectDirPath = "";
@@ -549,18 +695,27 @@
 			files = (
 				B4C255CC282515100055E69B /* VideoTableViewCell.xib in Resources */,
 				B45AD433282CED8D0032CA9E /* TableViewCell.xib in Resources */,
+				B45F25EF283B62EE00170675 /* DetailViewController.storyboard in Resources */,
 				B4BA44D52835E2F700F65E6E /* Todo.storyboard in Resources */,
 				B4C255C82824FA090055E69B /* StandFM.storyboard in Resources */,
+				B45F25E8283B533100170675 /* MCUdrama.storyboard in Resources */,
 				B4811A57282CD4F10030C9B5 /* QiitaClient.storyboard in Resources */,
+				B45F25E0283B528800170675 /* MCUmovie.storyboard in Resources */,
 				14B555622809A555003F8E17 /* LaunchScreen.storyboard in Resources */,
 				14B5555F2809A555003F8E17 /* Assets.xcassets in Resources */,
+				B4BD48C9283E199600F72712 /* FavoriteItemCell.xib in Resources */,
+				B45F25E4283B52E000170675 /* MCUdramaCell.xib in Resources */,
 				B48119FD282B68760030C9B5 /* LiveListCell.xib in Resources */,
+				B4BD48CF283F323200F72712 /* SwipeView.storyboard in Resources */,
+				B45F25D2283B505400170675 /* FavoriteViewController.storyboard in Resources */,
 				B453F86A281F86CA00629216 /* YouTube.storyboard in Resources */,
 				B4BA44D92835E32800F65E6E /* TodoCell.xib in Resources */,
+				B45F25DC283B524500170675 /* MCUmovieCell.xib in Resources */,
 				B48119DD2828B85B0030C9B5 /* ListTableViewCell.xib in Resources */,
 				14B5555D2809A54D003F8E17 /* Main.storyboard in Resources */,
 				B4C255C22824C0C40055E69B /* StyleHaus.storyboard in Resources */,
 				B4811A4E282CB0A00030C9B5 /* UserDefaults.storyboard in Resources */,
+				B45F25D6283B50A900170675 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,24 +781,6 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which rswift >/dev/null; then\nrswift generate \"$SRCROOT/generated/R.generated.swift\"\nelse\necho \"warning: rswift not installed\"\nfi\n";
 		};
-		B4892B0C283339E10099894F /* Run SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run SwiftLint";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint --fix --format\n  swiftlint\nelse\n  echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -653,17 +790,25 @@
 			files = (
 				B4C255C02824C0800055E69B /* StyleHausViewController.swift in Sources */,
 				B4892B17283495270099894F /* YouTubeViewModel.swift in Sources */,
+				B45F25DA283B522400170675 /* MCUmovieCell.swift in Sources */,
 				B4BA45272836288F00F65E6E /* TodoValidator.swift in Sources */,
+				B4BD48C8283E199600F72712 /* FavoriteItemCell.swift in Sources */,
 				B4BA44D32835E2DD00F65E6E /* TodoViewController.swift in Sources */,
 				B4892B1128348F3A0099894F /* HostingAPI.swift in Sources */,
+				B45F25CD283B501000170675 /* MCUModel.swift in Sources */,
 				B4892B1A28349F310099894F /* StyleHausViewModel.swift in Sources */,
+				B45F25C8283B4F9000170675 /* MCUAPI.swift in Sources */,
 				B4BA44802834CD4700F65E6E /* StandFMViewModel.swift in Sources */,
 				B4BA44CE2835E29B00F65E6E /* TodoModel.swift in Sources */,
 				14B5555A2809A54D003F8E17 /* ViewController.swift in Sources */,
 				B45AD42D282CE71D0032CA9E /* QiitaModel.swift in Sources */,
 				B4811A4C282CB0A00030C9B5 /* UserDefaults+.swift in Sources */,
+				B45F25DE283B526500170675 /* MCUmovieViewController.swift in Sources */,
+				B45F25E2283B52BF00170675 /* MCUdramaCell.swift in Sources */,
+				B4BD48CD283F321B00F72712 /* SwipeViewController.swift in Sources */,
 				B48119F9282B68530030C9B5 /* StandFMLiveListModel.swift in Sources */,
 				B4C255CB282515100055E69B /* VideoTableViewCell.swift in Sources */,
+				B4BD48CB283E226900F72712 /* FavoriteDataModel.swift in Sources */,
 				B4811A4F282CB0A00030C9B5 /* DataModel.swift in Sources */,
 				B4BA44D82835E32800F65E6E /* TodoCell.swift in Sources */,
 				B4811A50282CB0A00030C9B5 /* Validation.swift in Sources */,
@@ -672,11 +817,16 @@
 				B4C255C62824F9F40055E69B /* StandFMViewController.swift in Sources */,
 				B4811A59282CD5210030C9B5 /* QiitaClientViewController.swift in Sources */,
 				B45AD432282CED8D0032CA9E /* TableViewCell.swift in Sources */,
+				B45F25ED283B62DC00170675 /* DetailViewController.swift in Sources */,
+				B45F25E6283B531400170675 /* MCUdramaViewController.swift in Sources */,
+				B45F25D4283B509500170675 /* HomeViewController.swift in Sources */,
 				B45AD41A282CE2EC0032CA9E /* R.generated.swift in Sources */,
+				B45F25CF283B503D00170675 /* FavoriteViewController.swift in Sources */,
 				B4811A4D282CB0A00030C9B5 /* UserDefaultsViewController.swift in Sources */,
 				B45AD438282CF9F70032CA9E /* QiitaViewModel.swift in Sources */,
 				14B555582809A54D003F8E17 /* SceneDelegate.swift in Sources */,
 				B45AD42F282CE8880032CA9E /* QiitaAPI.swift in Sources */,
+				B45F25CB283B4FC400170675 /* MCUViewModel.swift in Sources */,
 				B4C255CE282515470055E69B /* YouTubeVideoModel.swift in Sources */,
 				B48119FB282B686E0030C9B5 /* LiveListCell.swift in Sources */,
 				B48119DC2828B85B0030C9B5 /* ListTableViewCell.swift in Sources */,
@@ -927,12 +1077,28 @@
 				kind = branch;
 			};
 		};
+		B45F25E9283B538A00170675 /* XCRemoteSwiftPackageReference "Parchment" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rechsteiner/Parchment";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		B4BA45202836044300F65E6E /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift";
 			requirement = {
 				branch = master;
 				kind = branch;
+			};
+		};
+		B4BD48BF283DBE5000F72712 /* XCRemoteSwiftPackageReference "Instantiate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tarunon/Instantiate";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -973,6 +1139,11 @@
 			package = B45AD44E282D03F10032CA9E /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
 		};
+		B45F25EA283B538B00170675 /* Parchment */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B45F25E9283B538A00170675 /* XCRemoteSwiftPackageReference "Parchment" */;
+			productName = Parchment;
+		};
 		B4BA45212836044400F65E6E /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B4BA45202836044300F65E6E /* XCRemoteSwiftPackageReference "realm-swift" */;
@@ -982,6 +1153,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B4BA45202836044300F65E6E /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		B4BD48C0283DBE5000F72712 /* Instantiate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4BD48BF283DBE5000F72712 /* XCRemoteSwiftPackageReference "Instantiate" */;
+			productName = Instantiate;
+		};
+		B4BD48C2283DBE5000F72712 /* InstantiateStandard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4BD48BF283DBE5000F72712 /* XCRemoteSwiftPackageReference "Instantiate" */;
+			productName = InstantiateStandard;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -70,7 +70,7 @@ final class TodoViewController: UIViewController {
         setupToolbar(text: fixedDateTextField)
         setupfixedDatePicker(text: fixedDateTextField)
 
-        alert.addAction(UIAlertAction(title: "保存", style: .default, handler: { [weak self] (ac) in
+        alert.addAction(UIAlertAction(title: "保存", style: .default, handler: { [weak self] (_) in
             guard let self = self else { return }
             let result = TodoValidator.shared.validateTodoInfo(title: titleTextField.text, contents: contentsTextField.text, fixedDate: fixedDateTextField.text)
 

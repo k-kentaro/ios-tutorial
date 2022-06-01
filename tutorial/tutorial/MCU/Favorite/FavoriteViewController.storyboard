@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="blH-sR-56z">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--お気に入り-->
+        <scene sceneID="TGt-2b-sh5">
+            <objects>
+                <viewController id="blH-sR-56z" customClass="FavoriteViewController" customModule="tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GoL-u3-htv">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bqV-q5-tRk">
+                                <rect key="frame" x="0.0" y="88" width="390" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ironmanicon" id="E5w-RW-F9K">
+                                <rect key="frame" x="0.0" y="85" width="390" height="673"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2dF-6g-Y4z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="E5w-RW-F9K" firstAttribute="leading" secondItem="bqV-q5-tRk" secondAttribute="leading" id="8WJ-Zm-q59"/>
+                            <constraint firstItem="bqV-q5-tRk" firstAttribute="leading" secondItem="2dF-6g-Y4z" secondAttribute="leading" id="ASI-4z-HE6"/>
+                            <constraint firstItem="bqV-q5-tRk" firstAttribute="top" secondItem="2dF-6g-Y4z" secondAttribute="top" id="MGe-TO-Z4B"/>
+                            <constraint firstItem="E5w-RW-F9K" firstAttribute="trailing" secondItem="bqV-q5-tRk" secondAttribute="trailing" id="V3o-tC-uUQ"/>
+                            <constraint firstItem="2dF-6g-Y4z" firstAttribute="bottom" secondItem="bqV-q5-tRk" secondAttribute="bottom" id="VGI-F1-IV1"/>
+                            <constraint firstItem="2dF-6g-Y4z" firstAttribute="trailing" secondItem="bqV-q5-tRk" secondAttribute="trailing" id="aY6-Uc-21O"/>
+                            <constraint firstItem="E5w-RW-F9K" firstAttribute="top" secondItem="bqV-q5-tRk" secondAttribute="top" id="dsm-bk-zm8"/>
+                            <constraint firstItem="E5w-RW-F9K" firstAttribute="bottom" secondItem="bqV-q5-tRk" secondAttribute="bottom" id="tZp-fe-JYy"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="お気に入り" image="star.fill" catalog="system" id="iEH-AI-K7E"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="favoriteIsEmptyView" destination="E5w-RW-F9K" id="ZH0-og-YEI"/>
+                        <outlet property="favoriteTableView" destination="bqV-q5-tRk" id="HvC-xN-4hn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efL-HX-qBS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.46153846153846" y="64.691943127962077"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ironmanicon" width="1080" height="1985"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

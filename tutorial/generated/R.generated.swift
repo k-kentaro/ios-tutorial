@@ -89,10 +89,20 @@ struct R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 8 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 14 storyboards.
   struct storyboard {
+    /// Storyboard `DetailViewController`.
+    static let detailViewController = _R.storyboard.detailViewController()
+    /// Storyboard `FavoriteViewController`.
+    static let favoriteViewController = _R.storyboard.favoriteViewController()
+    /// Storyboard `Home`.
+    static let home = _R.storyboard.home()
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
+    /// Storyboard `MCUdrama`.
+    static let mcUdrama = _R.storyboard.mcUdrama()
+    /// Storyboard `MCUmovie`.
+    static let mcUmovie = _R.storyboard.mcUmovie()
     /// Storyboard `Main`.
     static let main = _R.storyboard.main()
     /// Storyboard `QiitaClient`.
@@ -101,6 +111,8 @@ struct R: Rswift.Validatable {
     static let standFM = _R.storyboard.standFM()
     /// Storyboard `StyleHaus`.
     static let styleHaus = _R.storyboard.styleHaus()
+    /// Storyboard `SwipeView`.
+    static let swipeView = _R.storyboard.swipeView()
     /// Storyboard `Todo`.
     static let todo = _R.storyboard.todo()
     /// Storyboard `UserDefaults`.
@@ -109,9 +121,44 @@ struct R: Rswift.Validatable {
     static let youTube = _R.storyboard.youTube()
 
     #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "DetailViewController", bundle: ...)`
+    static func detailViewController(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.detailViewController)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "FavoriteViewController", bundle: ...)`
+    static func favoriteViewController(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.favoriteViewController)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "Home", bundle: ...)`
+    static func home(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.home)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
     static func launchScreen(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.launchScreen)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "MCUdrama", bundle: ...)`
+    static func mcUdrama(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.mcUdrama)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "MCUmovie", bundle: ...)`
+    static func mcUmovie(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.mcUmovie)
     }
     #endif
 
@@ -140,6 +187,13 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "StyleHaus", bundle: ...)`
     static func styleHaus(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.styleHaus)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "SwipeView", bundle: ...)`
+    static func swipeView(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.swipeView)
     }
     #endif
 
@@ -193,7 +247,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 30 images.
+  /// This `R.image` struct is generated, and contains static references to 31 images.
   struct image {
     /// Image `STYLEHAUS`.
     static let stylehauS = Rswift.ImageResource(bundle: R.hostingBundle, name: "STYLEHAUS")
@@ -225,6 +279,8 @@ struct R: Rswift.Validatable {
     static let follow = Rswift.ImageResource(bundle: R.hostingBundle, name: "follow")
     /// Image `geme`.
     static let geme = Rswift.ImageResource(bundle: R.hostingBundle, name: "geme")
+    /// Image `ironmanicon`.
+    static let ironmanicon = Rswift.ImageResource(bundle: R.hostingBundle, name: "ironmanicon")
     /// Image `list`.
     static let list = Rswift.ImageResource(bundle: R.hostingBundle, name: "list")
     /// Image `live`.
@@ -358,6 +414,13 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "geme", bundle: ..., traitCollection: ...)`
     static func geme(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.geme, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "ironmanicon", bundle: ..., traitCollection: ...)`
+    static func ironmanicon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.ironmanicon, compatibleWith: traitCollection)
     }
     #endif
 
@@ -500,18 +563,32 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 5 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 8 nibs.
   struct nib {
+    /// Nib `FavoriteItemCell`.
+    static let favoriteItemCell = _R.nib._FavoriteItemCell()
     /// Nib `ListTableViewCell`.
     static let listTableViewCell = _R.nib._ListTableViewCell()
     /// Nib `LiveListCell`.
     static let liveListCell = _R.nib._LiveListCell()
+    /// Nib `MCUdramaCell`.
+    static let mcUdramaCell = _R.nib._MCUdramaCell()
+    /// Nib `MCUmovieCell`.
+    static let mcUmovieCell = _R.nib._MCUmovieCell()
     /// Nib `TableViewCell`.
     static let tableViewCell = _R.nib._TableViewCell()
     /// Nib `TodoCell`.
     static let todoCell = _R.nib._TodoCell()
     /// Nib `VideoTableViewCell`.
     static let videoTableViewCell = _R.nib._VideoTableViewCell()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "FavoriteItemCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.favoriteItemCell) instead")
+    static func favoriteItemCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.favoriteItemCell)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UINib(name: "ListTableViewCell", in: bundle)`
@@ -526,6 +603,22 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.liveListCell) instead")
     static func liveListCell(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.liveListCell)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "MCUdramaCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.mcUdramaCell) instead")
+    static func mcUdramaCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.mcUdramaCell)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "MCUmovieCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.mcUmovieCell) instead")
+    static func mcUmovieCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.mcUmovieCell)
     }
     #endif
 
@@ -553,12 +646,24 @@ struct R: Rswift.Validatable {
     }
     #endif
 
+    static func favoriteItemCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> FavoriteItemCell? {
+      return R.nib.favoriteItemCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? FavoriteItemCell
+    }
+
     static func listTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ListTableViewCell? {
       return R.nib.listTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ListTableViewCell
     }
 
     static func liveListCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> LiveListCell? {
       return R.nib.liveListCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? LiveListCell
+    }
+
+    static func mcUdramaCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MCUdramaCell? {
+      return R.nib.mcUdramaCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MCUdramaCell
+    }
+
+    static func mcUmovieCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MCUmovieCell? {
+      return R.nib.mcUmovieCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MCUmovieCell
     }
 
     static func tableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> TableViewCell? {
@@ -602,8 +707,28 @@ struct _R: Rswift.Validatable {
   #if os(iOS) || os(tvOS)
   struct nib: Rswift.Validatable {
     static func validate() throws {
+      try _FavoriteItemCell.validate()
       try _ListTableViewCell.validate()
+      try _MCUdramaCell.validate()
+      try _MCUmovieCell.validate()
       try _VideoTableViewCell.validate()
+    }
+
+    struct _FavoriteItemCell: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "FavoriteItemCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> FavoriteItemCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? FavoriteItemCell
+      }
+
+      static func validate() throws {
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "star.fill") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'star.fill' is used in nib 'FavoriteItemCell', but couldn't be loaded.") } }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+      }
+
+      fileprivate init() {}
     }
 
     struct _ListTableViewCell: Rswift.NibResourceType, Rswift.Validatable {
@@ -629,6 +754,40 @@ struct _R: Rswift.Validatable {
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> LiveListCell? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? LiveListCell
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _MCUdramaCell: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "MCUdramaCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MCUdramaCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MCUdramaCell
+      }
+
+      static func validate() throws {
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "star.fill") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'star.fill' is used in nib 'MCUdramaCell', but couldn't be loaded.") } }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _MCUmovieCell: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "MCUmovieCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MCUmovieCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MCUmovieCell
+      }
+
+      static func validate() throws {
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "star.fill") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'star.fill' is used in nib 'MCUmovieCell', but couldn't be loaded.") } }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
       }
 
       fileprivate init() {}
@@ -681,7 +840,22 @@ struct _R: Rswift.Validatable {
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
       #if os(iOS) || os(tvOS)
+      try detailViewController.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
+      try favoriteViewController.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
+      try home.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
       try launchScreen.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
+      try mcUdrama.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
+      try mcUmovie.validate()
       #endif
       #if os(iOS) || os(tvOS)
       try main.validate()
@@ -696,6 +870,9 @@ struct _R: Rswift.Validatable {
       try styleHaus.validate()
       #endif
       #if os(iOS) || os(tvOS)
+      try swipeView.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
       try todo.validate()
       #endif
       #if os(iOS) || os(tvOS)
@@ -705,6 +882,56 @@ struct _R: Rswift.Validatable {
       try youTube.validate()
       #endif
     }
+
+    #if os(iOS) || os(tvOS)
+    struct detailViewController: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = DetailViewController
+
+      let bundle = R.hostingBundle
+      let name = "DetailViewController"
+
+      static func validate() throws {
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    struct favoriteViewController: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = FavoriteViewController
+
+      let bundle = R.hostingBundle
+      let name = "FavoriteViewController"
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "ironmanicon", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ironmanicon' is used in storyboard 'FavoriteViewController', but couldn't be loaded.") }
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "star.fill") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'star.fill' is used in storyboard 'FavoriteViewController', but couldn't be loaded.") } }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    struct home: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = HomeViewController
+
+      let bundle = R.hostingBundle
+      let name = "Home"
+
+      static func validate() throws {
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
@@ -732,6 +959,38 @@ struct _R: Rswift.Validatable {
       static func validate() throws {
         if #available(iOS 11.0, tvOS 11.0, *) {
           if UIKit.UIColor(named: "AccentColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'AccentColor' is used in storyboard 'Main', but couldn't be loaded.") }
+        }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    struct mcUdrama: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = MCUdramaViewController
+
+      let bundle = R.hostingBundle
+      let name = "MCUdrama"
+
+      static func validate() throws {
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    struct mcUmovie: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = MCUmovieViewController
+
+      let bundle = R.hostingBundle
+      let name = "MCUmovie"
+
+      static func validate() throws {
+        if #available(iOS 11.0, tvOS 11.0, *) {
         }
       }
 
@@ -792,6 +1051,22 @@ struct _R: Rswift.Validatable {
         if UIKit.UIImage(named: "ハート", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ハート' is used in storyboard 'StyleHaus', but couldn't be loaded.") }
         if UIKit.UIImage(named: "ホームアイコン", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ホームアイコン' is used in storyboard 'StyleHaus', but couldn't be loaded.") }
         if UIKit.UIImage(named: "メニュー", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'メニュー' is used in storyboard 'StyleHaus', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    struct swipeView: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = UIKit.UIViewController
+
+      let bundle = R.hostingBundle
+      let name = "SwipeView"
+
+      static func validate() throws {
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
       }
