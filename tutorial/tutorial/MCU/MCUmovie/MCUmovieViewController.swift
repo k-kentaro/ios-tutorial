@@ -43,10 +43,11 @@ final class MCUmovieViewController: UIViewController {
             .map { !$0 }
             .drive(loadingIndicator.rx.isHidden)
             .disposed(by: disposeBag)
+        
         // TableViewのセットアップ
         viewModel.movieModels
             .bind(to: movieTableView.rx.items(cellIdentifier: mcuMovieCell, cellType: MCUmovieCell.self)) { [self] row, element, cell in
-                cell.detailButton.addTarget(nil, action: #selector(cell.tapDetailButton(_:)), for: .touchUpInside)
+                cell.detailButton.addTarget(nil, action: #selector(cell.tappedDetailButton(_:)), for: .touchUpInside)
                 cell.detailButton.tag = row
                 cell.favoriteButton.tag = row
                 cell.catchDataDelegate = self

@@ -47,6 +47,7 @@ final class FavoriteViewController: UIViewController {
             .map { !$0 }
             .drive(loadingIndicator.rx.isHidden)
             .disposed(by: disposeBag)
+        
         //インジケーターのセットアップ
         viewModel.isCellEmpty.asDriver()
             .drive(favoriteIsEmptyView.rx.isOpaque)
@@ -55,9 +56,10 @@ final class FavoriteViewController: UIViewController {
             .map { !$0 }
             .drive(favoriteIsEmptyView.rx.isHidden)
             .disposed(by: disposeBag)
+        
         //TableViewのセットアップ
         viewModel.favoriteDataModel.bind(to: favoriteTableView.rx.items(cellIdentifier: favoriteItemCell, cellType: FavoriteItemCell.self)) { [self] row, element, cell in
-            cell.detailButton.addTarget(nil, action: #selector(cell.tapDetailButton(_:)), for: .touchUpInside)
+            cell.detailButton.addTarget(nil, action: #selector(cell.tappedDetailButton(_:)), for: .touchUpInside)
             cell.detailButton.tag = row
             cell.favoriteButton.tag = row
             cell.catchDataDelegate = self

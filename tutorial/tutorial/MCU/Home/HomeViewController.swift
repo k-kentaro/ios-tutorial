@@ -19,6 +19,7 @@ final class HomeViewController: UITabBarController {
         UITabBar.appearance().tintColor = UIColor.red
         setUpTab()
     }
+    
     //Tabbarのセットアップ
     func setUpTab() {
         let swipeViewController = SwipeViewController()

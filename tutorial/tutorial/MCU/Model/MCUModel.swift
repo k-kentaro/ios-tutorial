@@ -23,14 +23,14 @@ struct MCUData: Codable {
     var chronology: Int?
 
     enum CodingKeys: String, CodingKey {
-        case id = "id"
-        case title = "title"
+        case id
+        case title
         case releaseDate = "release_date"
-        case overview = "overview"
+        case overview
         case coverUrl = "cover_url"
         case trailerUrl = "trailer_url"
-        case phase = "phase"
-        case saga = "saga"
-        case chronology = "chronology"
+        case phase
+        case saga
+        case chronology
     }
 }

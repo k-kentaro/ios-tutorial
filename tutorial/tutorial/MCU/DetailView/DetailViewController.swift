@@ -26,7 +26,7 @@ final class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         showTrailerButton.layer.cornerRadius = 10
-        showTrailerButton.addTarget(self, action: #selector(tapShowTrailerButton), for: .touchUpInside)
+        showTrailerButton.addTarget(self, action: #selector(tappedShowTrailerButton), for: .touchUpInside)
         loadingIndicator.center = view.center
         loadingIndicator.style = .large
         view.addSubview(loadingIndicator)
@@ -53,7 +53,7 @@ final class DetailViewController: UIViewController {
         }.disposed(by: disposeBag)
     }
     
-    @objc private func tapShowTrailerButton() {
+    @objc private func tappedShowTrailerButton() {
         viewModel.detailModels.bind { respons in
             guard let trailerUrl = respons.trailerUrl,
                   let url = URL(string: trailerUrl) else {

@@ -29,8 +29,8 @@ final class MCUmovieCell: UITableViewCell {
         favoriteButton.backgroundColor = .systemBlue
         favoriteButton.tintColor = .white
         favoriteButton.setTitle("", for: .normal)
-        detailButton.addTarget(nil, action: #selector(tapDetailButton), for: .touchUpInside)
-        favoriteButton.addTarget(nil, action: #selector(tapFavoriteButton), for: .touchUpInside)
+        detailButton.addTarget(nil, action: #selector(tappedDetailButton), for: .touchUpInside)
+        favoriteButton.addTarget(nil, action: #selector(tappedFavoriteButton), for: .touchUpInside)
     }
 
     func configure(model: MCUData) {
@@ -54,20 +54,22 @@ final class MCUmovieCell: UITableViewCell {
         }
     }
 
-    @objc func tapDetailButton(_ sender: UIButton) {
+    @objc func tappedDetailButton(_ sender: UIButton) {
         let row = sender.tag
         self.catchDataDelegate?.catchData(row: row)
     }
 
-    @objc func tapFavoriteButton(_ sender: UIButton) {
+    @objc func tappedFavoriteButton(_ sender: UIButton) {
         let row = sender.tag
         self.catchFavoriteDelegate?.catchFavorite(row: row)
     }
 }
+
 //詳細データを取得するプロトコル
 protocol CatchDataProtocol {
     func catchData(row: Int)
 }
+
 //お気に入りデータを取得するプロトコル
 protocol CatchFavoriteProtocol {
     func catchFavorite(row: Int)

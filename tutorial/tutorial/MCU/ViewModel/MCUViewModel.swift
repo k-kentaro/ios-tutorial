@@ -46,6 +46,7 @@ final class MCUViewModel {
     private func hiddenBackImage() {
         isCellEmpty.accept(false)
     }
+    
     //APIから映画のリストを取得
     func requestMovieData() {
         showIndicator()
@@ -61,6 +62,7 @@ final class MCUViewModel {
             }
             .disposed(by: disposeBag)
     }
+    
     //APIからドラマのリストを取得
     func requestDramaData() {
         provider.rx.request(.drama)
@@ -74,6 +76,7 @@ final class MCUViewModel {
             }
             .disposed(by: disposeBag)
     }
+    
     //映画の詳細を取得
     func getMovieDetailData(row: Int) {
         showIndicator()
@@ -100,6 +103,7 @@ final class MCUViewModel {
             }
             .disposed(by: disposeBag)
     }
+    
     //ドラマの詳細を取得
     func getDramaDetailData(row: Int) {
         showIndicator()
@@ -124,6 +128,7 @@ final class MCUViewModel {
             }
             .disposed(by: disposeBag)
     }
+    
     //お気に入りアイテムの詳細を取得
     func getFavoriteDetailData(row: Int) {
         showIndicator()
@@ -182,6 +187,7 @@ final class MCUViewModel {
             }
             .disposed(by: disposeBag)
     }
+    
     //ドラマリストからお気に入り状態確認&保存する関数
     func checkSaveDrama(row: Int) {
         provider.rx.request(.drama)
@@ -214,6 +220,7 @@ final class MCUViewModel {
             }
             .disposed(by: disposeBag)
     }
+    
     //映画リストのお気に入り状態をチェックするだけの関数
     func checkFavoriteStateMovie(row: Int) {
         isFavorite = []
@@ -240,6 +247,7 @@ final class MCUViewModel {
             }
             .disposed(by: disposeBag)
     }
+    
     //ドラマリストのお気に入り状態をチェックするだけの関数
     func checkFavoriteStateDrama(row: Int) {
         isFavorite = []
@@ -264,6 +272,7 @@ final class MCUViewModel {
             }
             .disposed(by: disposeBag)
     }
+    
     //お気に入りリストをチェックして保存or削除する関数
     func checkFavoriteList(row: Int) {
         favoriteDataModel.asObservable().subscribe(onNext: { [weak self] response in
@@ -298,6 +307,7 @@ final class MCUViewModel {
             }
         }
     }
+    
     //お気に入りを取得してマージする
     func requestFavoriteData() {
         let movieObservable = Observable<[MCUData]>.create { [self] observer -> Disposable in

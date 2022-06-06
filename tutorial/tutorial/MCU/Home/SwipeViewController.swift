@@ -14,6 +14,7 @@ final class SwipeViewController: UIViewController {
         super.viewDidLoad()
         setUpParchment()
     }
+    
     // Parchmentのセットアップ
     func setUpParchment() {
         guard let mcuMovieVC = R.storyboard.mcUmovie().instantiateInitialViewController(),

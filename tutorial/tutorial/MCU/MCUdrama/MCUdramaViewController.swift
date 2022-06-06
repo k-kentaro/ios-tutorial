@@ -42,10 +42,11 @@ final class MCUdramaViewController: UIViewController {
             .map { !$0 }
             .drive(loadingIndicator.rx.isHidden)
             .disposed(by: disposeBag)
+        
         // TableViewのセットアップ
         viewModel.dramaModels
             .bind(to: dramaTableView.rx.items(cellIdentifier: mcuDramaCell, cellType: MCUdramaCell.self)) { row, element, cell in
-                cell.detailButton.addTarget(nil, action: #selector(cell.tapDetailButton(_:)), for: .touchUpInside)
+                cell.detailButton.addTarget(nil, action: #selector(cell.tappedDetailButton(_:)), for: .touchUpInside)
                 cell.detailButton.tag = row
                 cell.favoriteButton.tag = row
                 cell.catchDataDelegate = self
