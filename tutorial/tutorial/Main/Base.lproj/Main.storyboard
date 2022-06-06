@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AHG-cp-dbH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="No8-gT-aWi">
     <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1Al-Zq-ltM">
-                                <rect key="frame" x="95" y="67" width="130" height="386.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Al-Zq-ltM">
+                                <rect key="frame" x="95" y="82" width="130" height="356.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main StoryBoard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFQ-hF-eMh">
                                         <rect key="frame" x="0.0" y="0.0" width="130" height="20.5"/>
@@ -28,63 +28,73 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGT-HN-u6C">
-                                        <rect key="frame" x="0.0" y="50.5" width="130" height="31"/>
+                                        <rect key="frame" x="0.0" y="37.5" width="130" height="31"/>
                                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="YouTube"/>
                                         <connections>
-                                            <segue destination="nmk-qR-RCP" kind="push" id="8Vu-aM-4Qf"/>
+                                            <action selector="tapdYouTube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IQf-xz-hQH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgF-q9-Yuq">
-                                        <rect key="frame" x="0.0" y="111.5" width="130" height="31"/>
+                                        <rect key="frame" x="0.0" y="85.5" width="130" height="31"/>
                                         <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="STYLEHAUS"/>
                                         <connections>
-                                            <segue destination="sIL-db-NGk" kind="show" id="nQu-56-KxE"/>
+                                            <action selector="taodStyleHaus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eve-mh-ysu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1j6-h5-kP6">
-                                        <rect key="frame" x="0.0" y="172.5" width="130" height="31"/>
+                                        <rect key="frame" x="0.0" y="133.5" width="130" height="31"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="standFM"/>
                                         <connections>
-                                            <segue destination="vrg-AR-Tu3" kind="show" id="WdG-UH-1vw"/>
+                                            <action selector="tapdStandFM:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ONx-51-lHH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykL-zC-giV">
-                                        <rect key="frame" x="0.0" y="233.5" width="130" height="31"/>
+                                        <rect key="frame" x="0.0" y="181.5" width="130" height="31"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="UserDefault"/>
                                         <connections>
-                                            <segue destination="1pJ-4H-R9H" kind="show" id="nNd-qt-8rD"/>
+                                            <action selector="tapdUserDefaults:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kqe-Hp-4fQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFO-vX-Lzn">
-                                        <rect key="frame" x="0.0" y="294.5" width="130" height="31"/>
+                                        <rect key="frame" x="0.0" y="229.5" width="130" height="31"/>
                                         <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="QiitaClient"/>
                                         <connections>
-                                            <segue destination="sED-Bi-20b" kind="show" id="ckc-na-qYV"/>
+                                            <action selector="tapdQiitaClient:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F37-tG-nYJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gG6-kV-9eX">
-                                        <rect key="frame" x="0.0" y="355.5" width="130" height="31"/>
+                                        <rect key="frame" x="0.0" y="277.5" width="130" height="31"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="realmTodo"/>
                                         <connections>
-                                            <segue destination="W6t-8s-3ha" kind="show" id="Izg-Cd-7sx"/>
+                                            <action selector="tapdRealmToDo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IAa-Aa-OHZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IK9-df-SZh">
+                                        <rect key="frame" x="0.0" y="325.5" width="130" height="31"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="MCU"/>
+                                        <connections>
+                                            <action selector="tapdMCU:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DAK-zO-uNT"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -104,96 +114,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="97.767857142857139"/>
-        </scene>
-        <!--YouTube-->
-        <scene sceneID="3j2-wG-HHa">
-            <objects>
-                <viewControllerPlaceholder storyboardName="YouTube" id="nmk-qR-RCP" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="sjU-k2-res"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8J7-kM-6nP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1488.4057971014495" y="55.580357142857139"/>
-        </scene>
-        <!--StyleHaus-->
-        <scene sceneID="6kr-lY-B3v">
-            <objects>
-                <viewControllerPlaceholder storyboardName="StyleHaus" id="sIL-db-NGk" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="rcH-u2-pKk"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MCp-tn-32V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1515" y="230"/>
-        </scene>
-        <!--StandFM-->
-        <scene sceneID="hjO-Pf-s7W">
-            <objects>
-                <viewControllerPlaceholder storyboardName="StandFM" id="vrg-AR-Tu3" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="B1w-cq-p0J"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xLc-sX-cEf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1506" y="320"/>
-        </scene>
-        <!--UserDefaults-->
-        <scene sceneID="ETL-84-OJN">
-            <objects>
-                <viewControllerPlaceholder storyboardName="UserDefaults" id="1pJ-4H-R9H" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="RUW-x0-1Dd"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cK1-qF-Ve6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1494" y="450"/>
-        </scene>
-        <!--QiitaClient-->
-        <scene sceneID="pez-mh-r0G">
-            <objects>
-                <viewControllerPlaceholder storyboardName="QiitaClient" id="sED-Bi-20b" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="I6C-IU-sse"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qhZ-AM-WIr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1446" y="530"/>
-        </scene>
-        <!--Todo-->
-        <scene sceneID="TjW-WW-iQe">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Todo" id="W6t-8s-3ha" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="FBq-oi-f0u"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="899-KC-w2T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1468" y="601"/>
+            <point key="canvasLocation" x="1925.625" y="97.5"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="P5h-gX-4pU">
+        <scene sceneID="5MX-En-PfU">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AHG-cp-dbH" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="No8-gT-aWi" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7e0-mE-gF5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Yb-8E-iyq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <navigationBarAppearance key="scrollEdgeAppearance">
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </navigationBarAppearance>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Zdl-6L-WPS"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IJz-zc-4PL"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MSQ-Cv-xtf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PAX-Lz-AEM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
-        </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="hiD-IA-iJK">
-            <objects>
-                <viewControllerPlaceholder id="oCB-HC-y08" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="k5W-l8-8AP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="457" y="29"/>
+            <point key="canvasLocation" x="928.125" y="97.5"/>
         </scene>
     </scenes>
     <resources>
